@@ -4,7 +4,7 @@
   "private": true,
   "description": "Interactive atlas and repository for vetted participatory AI initiatives.",
   "engines": {
-    "node": ">=22.0.0"
+    "node": "22.x"
   },
   "scripts": {
     "build:data": "node scripts/build-data.mjs",
