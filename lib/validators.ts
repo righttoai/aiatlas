@@ -7,6 +7,13 @@ import {
   SubmissionItem
 } from "@/lib/types";
 
+export class InputValidationError extends Error {
+  constructor(message: string) {
+    super(message);
+    this.name = "InputValidationError";
+  }
+}
+
 function asOptionalString(value: unknown) {
   if (typeof value !== "string") return null;
   const trimmed = value.trim();
@@ -16,7 +23,7 @@ function asOptionalString(value: unknown) {
 function asRequiredString(value: unknown, field: string) {
   const parsed = asOptionalString(value);
   if (!parsed) {
-    throw new Error(`Missing required field: ${field}`);
+    throw new InputValidationError(`Missing required field: ${field}`);
   }
   return parsed;
 }
@@ -28,7 +35,7 @@ function asOptionalUrl(value: unknown) {
   try {
     return new URL(parsed).toString();
   } catch {
-    throw new Error("Invalid URL.");
+    throw new InputValidationError("Invalid URL.");
   }
 }
 

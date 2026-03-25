@@ -8,6 +8,7 @@ import type {
   SchemaFeedbackItem,
   SubmissionItem
 } from "@/lib/types";
+import { InputValidationError } from "@/lib/validators";
 
 type GitHubConfig = {
   token: string;
@@ -544,6 +545,14 @@ export async function submitRedactionRequest(item: RedactionItem, projectName: s
 
 export function getModerationErrorMessage(error: unknown) {
   if (error instanceof ModerationConfigurationError) {
+    if (process.env.NODE_ENV === "production") {
+      return "Submissions are temporarily unavailable. The moderation settings for this deployment are not complete yet.";
+    }
+
+    return error.message;
+  }
+
+  if (error instanceof InputValidationError) {
     return error.message;
   }
 
@@ -551,6 +560,10 @@ export function getModerationErrorMessage(error: unknown) {
 }
 
 export function getModerationErrorStatus(error: unknown) {
+  if (error instanceof InputValidationError) {
+    return 400;
+  }
+
   if (error instanceof ModerationConfigurationError) {
     return error.status;
   }
