@@ -1,0 +1,46 @@
+[
+  {
+    "id": "2026-03-23",
+    "label": "2026-03-23 vetted snapshot",
+    "date": "2026-03-23",
+    "recordCount": 115,
+    "normalizedCountries": 29,
+    "checksum": "9c54dfc0f0a61704601502a487c3c8f4b0c03b8b358f1074f9d5a7de8032fc2a",
+    "sourceFiles": [
+      "participatory_ai_atlas_expanded_2026-03-23.csv"
+    ],
+    "citation": "Participatory AI Atlas. 2026-03-23 vetted snapshot generated from participatory_ai_atlas_expanded_2026-03-23.csv on 2026-03-23.",
+    "notes": [
+      "Single-source import from the vetted atlas CSV.",
+      "Legacy workbook merges and previous canonical CSVs are no longer part of the build pipeline.",
+      "Community submissions, annotations, and redaction requests remain separate in data/runtime."
+    ],
+    "artifacts": [
+      {
+        "label": "Processed JSON",
+        "path": "/downloads/2026-03-23/projects.json",
+        "bytes": 561027
+      },
+      {
+        "label": "Processed GeoJSON",
+        "path": "/downloads/2026-03-23/projects.geojson",
+        "bytes": 67463
+      },
+      {
+        "label": "Dataset stats",
+        "path": "/downloads/2026-03-23/stats.json",
+        "bytes": 25607
+      },
+      {
+        "label": "Schema",
+        "path": "/downloads/2026-03-23/schema.json",
+        "bytes": 3679
+      },
+      {
+        "label": "Vetted source CSV",
+        "path": "/downloads/2026-03-23/participatory_ai_atlas_expanded_2026-03-23.csv",
+        "bytes": 166791
+      }
+    ]
+  }
+]

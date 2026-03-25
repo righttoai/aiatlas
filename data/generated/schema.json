@@ -1,0 +1,113 @@
+{
+  "version": "2026-03-23",
+  "generatedAt": "2026-03-24T00:41:00.491Z",
+  "minimalParticipationDocumentation": [
+    {
+      "key": "participationMode",
+      "label": "Participation mode",
+      "description": "How the source describes participation or public involvement in the project.",
+      "requiredForContribution": true,
+      "publicByDefault": true
+    },
+    {
+      "key": "participants",
+      "label": "Participants",
+      "description": "Who takes part, such as communities, workers, publics, or institutional partners.",
+      "requiredForContribution": true,
+      "publicByDefault": true
+    },
+    {
+      "key": "participationMethods",
+      "label": "Participation methods",
+      "description": "Concrete methods such as workshops, deliberation, data collection, annotation, or auditing.",
+      "requiredForContribution": true,
+      "publicByDefault": true
+    },
+    {
+      "key": "participatoryEvidence",
+      "label": "Participatory evidence",
+      "description": "Short, evidence-backed summary showing why the case belongs in the atlas.",
+      "requiredForContribution": true,
+      "publicByDefault": true
+    }
+  ],
+  "recordFields": [
+    {
+      "key": "projectName",
+      "label": "Project name",
+      "description": "Canonical project title used in the atlas.",
+      "requiredForContribution": true,
+      "publicByDefault": true
+    },
+    {
+      "key": "provenanceUrl",
+      "label": "Provenance URL",
+      "description": "Stable public source used to verify the record.",
+      "requiredForContribution": true,
+      "publicByDefault": true
+    },
+    {
+      "key": "officialUrl",
+      "label": "Official URL",
+      "description": "Primary project, program, or organization page when one exists.",
+      "requiredForContribution": false,
+      "publicByDefault": true
+    },
+    {
+      "key": "country",
+      "label": "Country",
+      "description": "Country or global anchor used for atlas placement.",
+      "requiredForContribution": true,
+      "publicByDefault": true
+    },
+    {
+      "key": "city",
+      "label": "City",
+      "description": "Optional city-level anchor when public materials make it clear.",
+      "requiredForContribution": false,
+      "publicByDefault": true
+    },
+    {
+      "key": "leadOrg",
+      "label": "Lead organization",
+      "description": "Lead organization, lab, coalition, or steward named in the source materials.",
+      "requiredForContribution": false,
+      "publicByDefault": true
+    },
+    {
+      "key": "category",
+      "label": "Category",
+      "description": "Primary atlas category for the project.",
+      "requiredForContribution": false,
+      "publicByDefault": true
+    },
+    {
+      "key": "applicationDomain",
+      "label": "Application domain",
+      "description": "Substantive domain such as healthcare, governance, accessibility, or humanitarian response.",
+      "requiredForContribution": false,
+      "publicByDefault": true
+    },
+    {
+      "key": "atlasDecision",
+      "label": "Atlas decision",
+      "description": "Current atlas placement such as Core, Cautious, or Review Candidate.",
+      "requiredForContribution": false,
+      "publicByDefault": true
+    },
+    {
+      "key": "reviewStatus",
+      "label": "Review status",
+      "description": "Current review state for the record, such as Ready or Manual Review Required.",
+      "requiredForContribution": false,
+      "publicByDefault": true
+    },
+    {
+      "key": "evidenceGrade",
+      "label": "Evidence grade",
+      "description": "High-level quality signal for the available evidence.",
+      "requiredForContribution": false,
+      "publicByDefault": true
+    }
+  ]
+}

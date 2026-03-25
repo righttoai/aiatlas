@@ -1,0 +1,2259 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.8198,
+          1.3521
+        ]
+      },
+      "properties": {
+        "slug": "a-i-verify",
+        "projectName": "A.I. Verify",
+        "category": "AI governance / testing framework",
+        "city": "Singapore",
+        "country": "Singapore",
+        "region": "Asia",
+        "organizationType": "government",
+        "participationModeGroup": "Participatory Governance",
+        "technologyGroup": "AI governance testing toolkit",
+        "atlasDecision": "Review Candidate",
+        "reviewStatus": "Manual Review Required"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4777,
+          51.9244
+        ]
+      },
+      "properties": {
+        "slug": "adis",
+        "projectName": "ADIS",
+        "category": "Environmental monitoring / computer vision",
+        "city": "Rotterdam",
+        "country": "Netherlands",
+        "region": "Europe",
+        "organizationType": "nonprofit",
+        "participationModeGroup": "Contributory",
+        "technologyGroup": "computer vision / edge AI debris detection",
+        "atlasDecision": "Review Candidate",
+        "reviewStatus": "Manual Review Required"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -115.1398,
+          36.1699
+        ]
+      },
+      "properties": {
+        "slug": "ai-red-teaming-challenge",
+        "projectName": "AI Red Teaming Challenge",
+        "category": "Participatory auditing / LLM safety",
+        "city": "Las Vegas",
+        "country": "United States",
+        "region": "North America",
+        "organizationType": "nonprofit + hacker conference collaboration",
+        "participationModeGroup": "Participatory Audit",
+        "technologyGroup": "generative language models",
+        "atlasDecision": "Cautious",
+        "reviewStatus": "Periodic Review"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.388,
+          33.749
+        ]
+      },
+      "properties": {
+        "slug": "at-makers",
+        "projectName": "AT Makers",
+        "category": "Assistive technology / co-design",
+        "city": "Atlanta",
+        "country": "United States",
+        "region": "North America",
+        "organizationType": "university",
+        "participationModeGroup": "Co Design",
+        "technologyGroup": "assistive-technology design methods",
+        "atlasDecision": "Cautious",
+        "reviewStatus": "Periodic Review"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.9603,
+          50.9375
+        ]
+      },
+      "properties": {
+        "slug": "avasag",
+        "projectName": "AVASAG",
+        "category": "Accessibility / sign language translation",
+        "city": "Cologne",
+        "country": "Germany",
+        "region": "Europe",
+        "organizationType": "research consortium",
+        "participationModeGroup": "Co Design",
+        "technologyGroup": "sign language translation",
+        "atlasDecision": "Cautious",
+        "reviewStatus": "Periodic Review"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.8613,
+          -31.9523
+        ]
+      },
+      "properties": {
+        "slug": "aboriginal-english-voices",
+        "projectName": "Aboriginal English Voices",
+        "category": "Indigenous language technology",
+        "city": "Perth",
+        "country": "Australia",
+        "region": "Oceania",
+        "organizationType": "university + industry partnership",
+        "participationModeGroup": "Co Governance",
+        "technologyGroup": "speech recognition / ASR",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5673,
+          45.5017
+        ]
+      },
+      "properties": {
+        "slug": "abundant-intelligences",
+        "projectName": "Abundant Intelligences",
+        "category": "Indigenous AI / data sovereignty",
+        "city": "Montreal",
+        "country": "Canada",
+        "region": "North America",
+        "organizationType": "Indigenous-led research network",
+        "participationModeGroup": "Community Led",
+        "technologyGroup": "multiple AI methods",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3321,
+          47.6062
+        ]
+      },
+      "properties": {
+        "slug": "algorithmic-equity-toolkit",
+        "projectName": "Algorithmic Equity Toolkit",
+        "category": "Governance / auditing",
+        "city": "Seattle",
+        "country": "United States",
+        "region": "North America",
+        "organizationType": "civil society + university",
+        "participationModeGroup": "Co Design",
+        "technologyGroup": "auditing toolkit",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.3816,
+          -34.6037
+        ]
+      },
+      "properties": {
+        "slug": "argenia",
+        "projectName": "ArgenIA",
+        "category": "AI governance / national strategy consultation",
+        "city": "Buenos Aires",
+        "country": "Argentina",
+        "region": "Latin America",
+        "organizationType": "government",
+        "participationModeGroup": "Public Consultation",
+        "technologyGroup": "national AI strategy",
+        "atlasDecision": "Review Candidate",
+        "reviewStatus": "Manual Review Required"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6972,
+          45.4215
+        ]
+      },
+      "properties": {
+        "slug": "artificial-intelligence-and-data-act-aida-consultation-process",
+        "projectName": "Artificial Intelligence and Data Act (AIDA) consultation process",
+        "category": "AI governance / public policy",
+        "city": "Ottawa",
+        "country": "Canada",
+        "region": "North America",
+        "organizationType": "government",
+        "participationModeGroup": "Public Consultation",
+        "technologyGroup": "AI policy and strategy",
+        "atlasDecision": "Review Candidate",
+        "reviewStatus": "Manual Review Required"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.006,
+          40.7128
+        ]
+      },
+      "properties": {
+        "slug": "artificial-intelligence-and-inclusion-formerly-gang-involved-youth-as-domain-experts",
+        "projectName": "Artificial Intelligence and Inclusion: Formerly Gang-Involved Youth as Domain Experts",
+        "category": "Social media / contextual NLP",
+        "city": "New York City",
+        "country": "United States",
+        "region": "North America",
+        "organizationType": "university / research lab",
+        "participationModeGroup": "Co Production",
+        "technologyGroup": "NLP / text analytics",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.3816,
+          -34.6037
+        ]
+      },
+      "properties": {
+        "slug": "aymurai",
+        "projectName": "AymurAI",
+        "category": "Gender justice / legal AI",
+        "city": "Buenos Aires",
+        "country": "Argentina",
+        "region": "Latin America",
+        "organizationType": "nonprofit / research collaboration",
+        "participationModeGroup": "Co Design",
+        "technologyGroup": "NLP / information extraction and anonymization",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.1829,
+          48.7758
+        ]
+      },
+      "properties": {
+        "slug": "cargorocket",
+        "projectName": "CargoRocket",
+        "category": "Mobility / cargo bike routing AI",
+        "city": "Stuttgart",
+        "country": "Germany",
+        "region": "Europe",
+        "organizationType": "nonprofit / social enterprise",
+        "participationModeGroup": "Contributory",
+        "technologyGroup": "routing and infrastructure scoring",
+        "atlasDecision": "Review Candidate",
+        "reviewStatus": "Manual Review Required"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.6323,
+          46.5197
+        ]
+      },
+      "properties": {
+        "slug": "citizen-s-assembly-on-ai-epfl",
+        "projectName": "Citizen's Assembly on AI (EPFL)",
+        "category": "Public dialogue / AI governance",
+        "city": "Lausanne / Romandy",
+        "country": "Switzerland",
+        "region": "Europe",
+        "organizationType": "university + civic methodology partner",
+        "participationModeGroup": "Participatory Governance",
+        "technologyGroup": "AI governance and public deliberation",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.1097,
+          42.3736
+        ]
+      },
+      "properties": {
+        "slug": "civilservant",
+        "projectName": "CivilServant",
+        "category": "Online governance / community experiments",
+        "city": "Cambridge",
+        "country": "United States",
+        "region": "North America",
+        "organizationType": "nonprofit + university collaboration",
+        "participationModeGroup": "Co Governance",
+        "technologyGroup": "platform experimentation and governance tooling",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0369,
+          38.9072
+        ]
+      },
+      "properties": {
+        "slug": "co-design-perspectives-on-algorithm-transparency-reporting",
+        "projectName": "Co-Design Perspectives on Algorithm Transparency Reporting",
+        "category": "Governance / algorithmic transparency",
+        "city": "Washington, DC",
+        "country": "United States",
+        "region": "North America",
+        "organizationType": "nonprofit / research institute",
+        "participationModeGroup": "Co Design",
+        "technologyGroup": "recommendation algorithm transparency reports",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7491,
+          49.4401
+        ]
+      },
+      "properties": {
+        "slug": "co-design-of-a-trustworthy-ai-system-in-healthcare",
+        "projectName": "Co-Design of a Trustworthy AI System in Healthcare",
+        "category": "Healthcare / trustworthy AI co-design",
+        "city": "Kaiserslautern",
+        "country": "Germany",
+        "region": "Europe",
+        "organizationType": "research consortium",
+        "participationModeGroup": "Co Design",
+        "technologyGroup": "deep learning / diagnostic support",
+        "atlasDecision": "Cautious",
+        "reviewStatus": "Periodic Review"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.582,
+          48.1351
+        ]
+      },
+      "properties": {
+        "slug": "covision",
+        "projectName": "CoVision",
+        "category": "Accessibility / computer vision",
+        "city": "Munich",
+        "country": "Germany",
+        "region": "Europe",
+        "organizationType": "nonprofit / research collaboration",
+        "participationModeGroup": "Co Design",
+        "technologyGroup": "computer vision for rapid-test classification",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.4194,
+          37.7749
+        ]
+      },
+      "properties": {
+        "slug": "collective-constitutional-ai",
+        "projectName": "Collective Constitutional AI",
+        "category": "AI alignment / norm elicitation",
+        "city": "San Francisco",
+        "country": "United States",
+        "region": "North America",
+        "organizationType": "multi-stakeholder partnership",
+        "participationModeGroup": "Deliberative Co Design",
+        "technologyGroup": "generative language models",
+        "atlasDecision": "Cautious",
+        "reviewStatus": "Periodic Review"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0721,
+          4.711
+        ]
+      },
+      "properties": {
+        "slug": "colombia-collaborative-ai-governance-process",
+        "projectName": "Colombia collaborative AI governance process",
+        "category": "AI governance / national strategy consultation",
+        "city": "Bogotá",
+        "country": "Colombia",
+        "region": "Latin America",
+        "organizationType": "government",
+        "participationModeGroup": "Participatory Governance",
+        "technologyGroup": "AI policy and strategy",
+        "atlasDecision": "Cautious",
+        "reviewStatus": "Periodic Review"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.3182,
+          2.0469
+        ]
+      },
+      "properties": {
+        "slug": "common-social-accountability-platform-somalia",
+        "projectName": "Common Social Accountability Platform - Somalia",
+        "category": "Civic tech / governance",
+        "city": "Mogadishu",
+        "country": "Somalia",
+        "region": "Africa",
+        "organizationType": "nonprofit / NGO",
+        "participationModeGroup": "Civic Participation",
+        "technologyGroup": "NLP / text analytics",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.2939,
+          27.6444
+        ]
+      },
+      "properties": {
+        "slug": "community-perspectives-of-ai-in-natural-resource-governance",
+        "projectName": "Community Perspectives of AI in Natural Resource Governance",
+        "category": "Environmental justice / Indigenous governance",
+        "city": "Vícam",
+        "country": "Mexico",
+        "region": "Latin America",
+        "organizationType": "grassroots community organization",
+        "participationModeGroup": "Community Led",
+        "technologyGroup": "AI-assisted natural resource governance",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.9959,
+          40.4406
+        ]
+      },
+      "properties": {
+        "slug": "community-empowered-air-quality-monitoring-system",
+        "projectName": "Community-Empowered Air Quality Monitoring System",
+        "category": "Environmental justice / air quality",
+        "city": "Pittsburgh",
+        "country": "United States",
+        "region": "North America",
+        "organizationType": "university / research lab",
+        "participationModeGroup": "Co Production",
+        "technologyGroup": "computer vision + sensing + predictive analytics",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.5946,
+          12.9716
+        ]
+      },
+      "properties": {
+        "slug": "content-accessibility-i-stem",
+        "projectName": "Content Accessibility (I-Stem)",
+        "category": "Accessibility / assistive AI",
+        "city": "Bengaluru",
+        "country": "India",
+        "region": "Asia",
+        "organizationType": "nonprofit / social enterprise",
+        "participationModeGroup": "Community Led",
+        "technologyGroup": "document accessibility and conversion",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9378,
+          38.9897
+        ]
+      },
+      "properties": {
+        "slug": "contributing-to-accessibility-datasets",
+        "projectName": "Contributing to Accessibility Datasets",
+        "category": "Accessibility / dataset stewardship",
+        "city": "College Park",
+        "country": "United States",
+        "region": "North America",
+        "organizationType": "university",
+        "participationModeGroup": "Co Design",
+        "technologyGroup": "accessibility datasets for AI systems",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9378,
+          38.9897
+        ]
+      },
+      "properties": {
+        "slug": "crowdsourcing-the-perception-of-machine-teaching",
+        "projectName": "Crowdsourcing the Perception of Machine Teaching",
+        "category": "Education / end-user machine teaching",
+        "city": "College Park",
+        "country": "United States",
+        "region": "North America",
+        "organizationType": "university",
+        "participationModeGroup": "Community In The Loop",
+        "technologyGroup": "supervised image classification / teachable interfaces",
+        "atlasDecision": "Cautious",
+        "reviewStatus": "Periodic Review"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1393,
+          38.7223
+        ]
+      },
+      "properties": {
+        "slug": "cycleai",
+        "projectName": "CycleAI",
+        "category": "Mobility / crowdsourced route safety AI",
+        "city": "Lisbon",
+        "country": "Portugal",
+        "region": "Europe",
+        "organizationType": "nonprofit / social enterprise",
+        "participationModeGroup": "Contributory",
+        "technologyGroup": "route safety prediction and recommender",
+        "atlasDecision": "Cautious",
+        "reviewStatus": "Periodic Review"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5683,
+          55.6761
+        ]
+      },
+      "properties": {
+        "slug": "designing-participatory-ai-creative-professionals",
+        "projectName": "Designing Participatory AI (Creative Professionals)",
+        "category": "Generative AI / participatory design research",
+        "city": "Copenhagen",
+        "country": "Denmark",
+        "region": "Europe",
+        "organizationType": "academic partnership",
+        "participationModeGroup": "Participatory Research",
+        "technologyGroup": "generative AI",
+        "atlasDecision": "Review Candidate",
+        "reviewStatus": "Manual Review Required"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.8374,
+          34.6834
+        ]
+      },
+      "properties": {
+        "slug": "designing-with-and-for-youth",
+        "projectName": "Designing with and for Youth",
+        "category": "Education / critical ML co-design",
+        "city": "Clemson",
+        "country": "United States",
+        "region": "North America",
+        "organizationType": "university",
+        "participationModeGroup": "Co Design",
+        "technologyGroup": "critical machine learning education",
+        "atlasDecision": "Core",
+        "reviewStatus": "Periodic Review"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.209,
+          28.6139
+        ]
+      },
+      "properties": {
+        "slug": "digital-green-farmer-chat",
+        "projectName": "Digital Green - Farmer.Chat",
+        "category": "Agriculture / extension",
+        "city": "New Delhi",
+        "country": "India",
+        "region": "Multi Region",
+        "organizationType": "nonprofit / social enterprise",
+        "participationModeGroup": "Co Design",
+        "technologyGroup": "conversational AI",
+        "atlasDecision": "Cautious",
+        "reviewStatus": "Periodic Review"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.3816,
+          -34.6037
+        ]
+      },
+      "properties": {
+        "slug": "e-d-i-a",
+        "projectName": "E.D.I.A.",
+        "category": "AI auditing / language models",
+        "city": "Buenos Aires",
+        "country": "Argentina",
+        "region": "Latin America",
+        "organizationType": "nonprofit / NGO",
+        "participationModeGroup": "Participatory Audit",
+        "technologyGroup": "auditing toolkit",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -56.1645,
+          -34.9011
+        ]
+      },
+      "properties": {
+        "slug": "empatia",
+        "projectName": "EmpatIA",
+        "category": "AI governance / public policy",
+        "city": "Montevideo",
+        "country": "Uruguay",
+        "region": "Latin America",
+        "organizationType": "civil society coalition",
+        "participationModeGroup": "Participatory Governance",
+        "technologyGroup": "governance / policy analysis",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.2574,
+          21.019
+        ]
+      },
+      "properties": {
+        "slug": "equitable-ai-guanajuato-use-case",
+        "projectName": "Equitable AI: Guanajuato Use Case",
+        "category": "AI governance / education",
+        "city": "Guanajuato",
+        "country": "Mexico",
+        "region": "Latin America",
+        "organizationType": "policy lab + academic collaborators",
+        "participationModeGroup": "Participatory Governance",
+        "technologyGroup": "early-warning analytics and bias mitigation",
+        "atlasDecision": "Cautious",
+        "reviewStatus": "Periodic Review"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3517,
+          50.8503
+        ]
+      },
+      "properties": {
+        "slug": "european-ai-alliance",
+        "projectName": "European AI Alliance",
+        "category": "AI governance / inclusive stakeholder engagement",
+        "city": "Brussels",
+        "country": "Belgium",
+        "region": "Europe",
+        "organizationType": "government",
+        "participationModeGroup": "Public Consultation",
+        "technologyGroup": "AI ethics and governance",
+        "atlasDecision": "Review Candidate",
+        "reviewStatus": "Manual Review Required"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.8025,
+          26.8206
+        ]
+      },
+      "properties": {
+        "slug": "explainable-ai-based-tutoring-system-for-upper-egypt-community-schools",
+        "projectName": "Explainable AI-Based Tutoring System for Upper Egypt Community Schools",
+        "category": "Education / participatory AI tutoring",
+        "city": "Upper Egypt",
+        "country": "Egypt",
+        "region": "Africa",
+        "organizationType": "academic partnership",
+        "participationModeGroup": "Co Design",
+        "technologyGroup": "AI-assisted decision systems / explainability",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9378,
+          38.9897
+        ]
+      },
+      "properties": {
+        "slug": "exploring-machine-teaching-with-children",
+        "projectName": "Exploring Machine Teaching with Children",
+        "category": "Education / machine teaching co-design",
+        "city": "College Park",
+        "country": "United States",
+        "region": "North America",
+        "organizationType": "university",
+        "participationModeGroup": "Co Design",
+        "technologyGroup": "interactive machine teaching / image classification",
+        "atlasDecision": "Core",
+        "reviewStatus": "Periodic Review"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.2577,
+          51.752
+        ]
+      },
+      "properties": {
+        "slug": "fair-aied",
+        "projectName": "Fair-AIEd",
+        "category": "Education / participatory AI governance",
+        "city": "Oxford",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "organizationType": "university",
+        "participationModeGroup": "Participatory Research",
+        "technologyGroup": "AI in education policy and system design",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.4194,
+          37.7749
+        ]
+      },
+      "properties": {
+        "slug": "global-task-force-for-inclusive-ai",
+        "projectName": "Global Task Force for Inclusive AI",
+        "category": "AI governance / inclusive stakeholder engagement",
+        "city": "San Francisco",
+        "country": "United States",
+        "region": "Global",
+        "organizationType": "multi-stakeholder partnership",
+        "participationModeGroup": "Participatory Governance",
+        "technologyGroup": "AI governance and stakeholder engagement practices",
+        "atlasDecision": "Cautious",
+        "reviewStatus": "Periodic Review"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0369,
+          38.9072
+        ]
+      },
+      "properties": {
+        "slug": "hot-fair",
+        "projectName": "HOT fAIr",
+        "category": "Humanitarian mapping / computer vision",
+        "city": "Washington",
+        "country": "United States",
+        "region": "Global",
+        "organizationType": "nonprofit",
+        "participationModeGroup": "Community In The Loop",
+        "technologyGroup": "computer vision / mapping AI",
+        "atlasDecision": "Cautious",
+        "reviewStatus": "Periodic Review"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1332,
+          19.4326
+        ]
+      },
+      "properties": {
+        "slug": "ia2030-mx",
+        "projectName": "IA2030.MX",
+        "category": "AI governance / public policy",
+        "city": "Mexico City",
+        "country": "Mexico",
+        "region": "Latin America",
+        "organizationType": "multi-stakeholder partnership",
+        "participationModeGroup": "Participatory Governance",
+        "technologyGroup": "AI policy and strategy",
+        "atlasDecision": "Cautious",
+        "reviewStatus": "Periodic Review"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5673,
+          45.5017
+        ]
+      },
+      "properties": {
+        "slug": "indigenous-pathfinders-in-ai",
+        "projectName": "Indigenous Pathfinders in AI",
+        "category": "Capacity building / Indigenous AI",
+        "city": "Montreal",
+        "country": "Canada",
+        "region": "North America",
+        "organizationType": "research institute + Indigenous education organization",
+        "participationModeGroup": "Community Led",
+        "technologyGroup": "multiple",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5673,
+          45.5017
+        ]
+      },
+      "properties": {
+        "slug": "indigenous-protocol-and-artificial-intelligence-working-group",
+        "projectName": "Indigenous Protocol and Artificial Intelligence Working Group",
+        "category": "Indigenous AI governance",
+        "city": "Montreal",
+        "country": "Canada",
+        "region": "North America",
+        "organizationType": "Indigenous-led working group",
+        "participationModeGroup": "Community Led",
+        "technologyGroup": "governance / protocol design",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.1652,
+          39.9526
+        ]
+      },
+      "properties": {
+        "slug": "interpretme",
+        "projectName": "InterpretMe",
+        "category": "Public safety / contextual social media interpretation",
+        "city": "Philadelphia",
+        "country": "United States",
+        "region": "North America",
+        "organizationType": "university / research lab",
+        "participationModeGroup": "Co Design",
+        "technologyGroup": "context-aware social media interpretation with planned ML integration",
+        "atlasDecision": "Review Candidate",
+        "reviewStatus": "Manual Review Required"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.1652,
+          39.9526
+        ]
+      },
+      "properties": {
+        "slug": "joynet",
+        "projectName": "JoyNet",
+        "category": "Public health / AI mental health support",
+        "city": "Philadelphia",
+        "country": "United States",
+        "region": "North America",
+        "organizationType": "university / research lab",
+        "participationModeGroup": "Co Production",
+        "technologyGroup": "AI-driven digital mental health hub",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1332,
+          19.4326
+        ]
+      },
+      "properties": {
+        "slug": "la-independiente",
+        "projectName": "La Independiente",
+        "category": "Labor and AI work / feminist AI",
+        "city": "Mexico City",
+        "country": "Mexico",
+        "region": "Latin America",
+        "organizationType": "policy lab + academic collaborators",
+        "participationModeGroup": "Co Design",
+        "technologyGroup": "AI-enhanced worker tools",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.2014,
+          39.1434
+        ]
+      },
+      "properties": {
+        "slug": "legal-track-of-trec",
+        "projectName": "Legal Track of TREC",
+        "category": "Legal AI / participatory design",
+        "city": "Gaithersburg",
+        "country": "United States",
+        "region": "North America",
+        "organizationType": "government + research collaboration",
+        "participationModeGroup": "Co Design",
+        "technologyGroup": "information retrieval and legal document review",
+        "atlasDecision": "Core",
+        "reviewStatus": "Periodic Review"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5673,
+          45.5017
+        ]
+      },
+      "properties": {
+        "slug": "mid-space",
+        "projectName": "MID-Space",
+        "category": "Urban planning / generative AI",
+        "city": "Montreal",
+        "country": "Canada",
+        "region": "North America",
+        "organizationType": "university / research lab",
+        "participationModeGroup": "Co Production",
+        "technologyGroup": "generative image models + preference learning",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9378,
+          38.9897
+        ]
+      },
+      "properties": {
+        "slug": "mycam",
+        "projectName": "MYCam",
+        "category": "Accessibility / computer vision",
+        "city": "College Park",
+        "country": "United States",
+        "region": "North America",
+        "organizationType": "university",
+        "participationModeGroup": "Co Design",
+        "technologyGroup": "computer vision / teachable object recognition",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.5825,
+          0.3476
+        ]
+      },
+      "properties": {
+        "slug": "makererenlp",
+        "projectName": "MakerereNLP",
+        "category": "Language technology / community speech and text",
+        "city": "Kampala",
+        "country": "Uganda",
+        "region": "Africa",
+        "organizationType": "grassroots community network",
+        "participationModeGroup": "Community Led",
+        "technologyGroup": "speech and NLP datasets",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.8219,
+          -1.2921
+        ]
+      },
+      "properties": {
+        "slug": "masakhaner",
+        "projectName": "MasakhaNER",
+        "category": "Language technology / named entity recognition",
+        "city": "Nairobi",
+        "country": "Kenya",
+        "region": "Africa",
+        "organizationType": "grassroots community network",
+        "participationModeGroup": "Community Led",
+        "technologyGroup": "NLP / NER",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.85,
+          -3.6333
+        ]
+      },
+      "properties": {
+        "slug": "masakhane-research-foundation",
+        "projectName": "Masakhane Research Foundation",
+        "category": "Language technology / community",
+        "city": "Kilifi",
+        "country": "Kenya",
+        "region": "Africa",
+        "organizationType": "grassroots community network",
+        "participationModeGroup": "Community Led",
+        "technologyGroup": "NLP / machine translation",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5674,
+          45.5019
+        ]
+      },
+      "properties": {
+        "slug": "montreal-declaration-for-responsible-ai",
+        "projectName": "Montréal Declaration for Responsible AI",
+        "category": "AI governance / public ethics",
+        "city": "Montréal",
+        "country": "Canada",
+        "region": "North America",
+        "organizationType": "university + research institute",
+        "participationModeGroup": "Public Consultation",
+        "technologyGroup": "AI ethics and governance",
+        "atlasDecision": "Cautious",
+        "reviewStatus": "Periodic Review"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1686,
+          41.3874
+        ]
+      },
+      "properties": {
+        "slug": "mosquito-alert",
+        "projectName": "Mosquito Alert",
+        "category": "Citizen science / public health",
+        "city": "Barcelona",
+        "country": "Spain",
+        "region": "Europe",
+        "organizationType": "nonprofit / research collaboration",
+        "participationModeGroup": "Contributory",
+        "technologyGroup": "computer vision + citizen science",
+        "atlasDecision": "Cautious",
+        "reviewStatus": "Periodic Review"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.403,
+          37.789
+        ]
+      },
+      "properties": {
+        "slug": "mozilla-common-voice",
+        "projectName": "Mozilla Common Voice",
+        "category": "Speech data / open dataset",
+        "city": "San Francisco",
+        "country": "United States",
+        "region": "Global",
+        "organizationType": "nonprofit",
+        "participationModeGroup": "Contributory",
+        "technologyGroup": "speech dataset / ASR",
+        "atlasDecision": "Cautious",
+        "reviewStatus": "Periodic Review"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.324,
+          27.7172
+        ]
+      },
+      "properties": {
+        "slug": "nfri-predict",
+        "projectName": "NFRI-Predict",
+        "category": "Humanitarian response / participatory AI",
+        "city": "Kathmandu",
+        "country": "Nepal",
+        "region": "Asia",
+        "organizationType": "nonprofit consortium",
+        "participationModeGroup": "Co Design",
+        "technologyGroup": "predictive modeling",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.2014,
+          39.1434
+        ]
+      },
+      "properties": {
+        "slug": "nist-ai-risk-management-framework",
+        "projectName": "NIST AI Risk Management Framework",
+        "category": "AI governance / risk assessment",
+        "city": "Gaithersburg",
+        "country": "United States",
+        "region": "North America",
+        "organizationType": "government",
+        "participationModeGroup": "Public Consultation",
+        "technologyGroup": "AI ethics and governance",
+        "atlasDecision": "Review Candidate",
+        "reviewStatus": "Manual Review Required"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.3792,
+          6.5244
+        ]
+      },
+      "properties": {
+        "slug": "naijanlp",
+        "projectName": "NaijaNLP",
+        "category": "Language technology / community sentiment and hate speech",
+        "city": "Lagos",
+        "country": "Nigeria",
+        "region": "Africa",
+        "organizationType": "grassroots community network",
+        "participationModeGroup": "Community Led",
+        "technologyGroup": "sentiment and hate speech NLP datasets",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1278,
+          51.5074
+        ]
+      },
+      "properties": {
+        "slug": "orbit",
+        "projectName": "ORBIT",
+        "category": "Accessibility / computer vision",
+        "city": "London",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "organizationType": "research consortium",
+        "participationModeGroup": "Community In The Loop",
+        "technologyGroup": "teachable object recognition dataset",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.4011,
+          37.7891
+        ]
+      },
+      "properties": {
+        "slug": "ores-inspect",
+        "projectName": "ORES-Inspect",
+        "category": "Participatory auditing / online governance",
+        "city": "San Francisco",
+        "country": "United States",
+        "region": "Global",
+        "organizationType": "nonprofit / research collaboration",
+        "participationModeGroup": "Participatory Audit",
+        "technologyGroup": "ML audit interface",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.4194,
+          37.7749
+        ]
+      },
+      "properties": {
+        "slug": "openai-democratic-inputs-to-ai",
+        "projectName": "OpenAI Democratic Inputs to AI",
+        "category": "AI governance / public deliberation",
+        "city": "San Francisco",
+        "country": "United States",
+        "region": "Global",
+        "organizationType": "company research",
+        "participationModeGroup": "Participatory Governance",
+        "technologyGroup": "AI governance / public alignment",
+        "atlasDecision": "Review Candidate",
+        "reviewStatus": "Manual Review Required"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.582,
+          48.1351
+        ]
+      },
+      "properties": {
+        "slug": "partialjustice",
+        "projectName": "PARTIALJUSTICE",
+        "category": "Algorithmic justice / participatory research",
+        "city": "Munich",
+        "country": "Germany",
+        "region": "Europe",
+        "organizationType": "university",
+        "participationModeGroup": "Participatory Research",
+        "technologyGroup": "algorithmic systems / justice research",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1276,
+          51.5072
+        ]
+      },
+      "properties": {
+        "slug": "phawm",
+        "projectName": "PHAWM",
+        "category": "Participatory auditing / trustworthy AI",
+        "city": "London",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "organizationType": "research consortium",
+        "participationModeGroup": "Participatory Audit",
+        "technologyGroup": "auditing workbenches",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          173.2643,
+          -35.1107
+        ]
+      },
+      "properties": {
+        "slug": "papa-reo",
+        "projectName": "Papa Reo",
+        "category": "Indigenous language technology",
+        "city": "Kaitaia",
+        "country": "New Zealand",
+        "region": "Oceania",
+        "organizationType": "Indigenous media organization",
+        "participationModeGroup": "Community Led",
+        "technologyGroup": "multilingual speech and NLP platform",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1276,
+          51.5072
+        ]
+      },
+      "properties": {
+        "slug": "people-s-ai-stewardship-summits",
+        "projectName": "People's AI Stewardship Summits",
+        "category": "Public dialogue / AI governance",
+        "city": "London",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "organizationType": "academy / nonprofit",
+        "participationModeGroup": "Public Consultation",
+        "technologyGroup": "governance",
+        "atlasDecision": "Cautious",
+        "reviewStatus": "Periodic Review"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.3468,
+          56.1304
+        ]
+      },
+      "properties": {
+        "slug": "people-s-consultation-on-ai",
+        "projectName": "People's Consultation on AI",
+        "category": "Public consultation / AI governance",
+        "city": "Canada (national)",
+        "country": "Canada",
+        "region": "North America",
+        "organizationType": "civil society coalition",
+        "participationModeGroup": "Public Consultation",
+        "technologyGroup": "governance",
+        "atlasDecision": "Cautious",
+        "reviewStatus": "Periodic Review"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5683,
+          55.6761
+        ]
+      },
+      "properties": {
+        "slug": "project-jetson",
+        "projectName": "Project Jetson",
+        "category": "Humanitarian response / predictive analytics",
+        "city": "Copenhagen",
+        "country": "Denmark",
+        "region": "Africa",
+        "organizationType": "nonprofit / NGO",
+        "participationModeGroup": "Participatory Research",
+        "technologyGroup": "predictive analytics / machine learning",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.9959,
+          40.4406
+        ]
+      },
+      "properties": {
+        "slug": "project-rise",
+        "projectName": "Project RISE",
+        "category": "Environmental justice / citizen science",
+        "city": "Pittsburgh",
+        "country": "United States",
+        "region": "North America",
+        "organizationType": "university / research lab",
+        "participationModeGroup": "Contributory",
+        "technologyGroup": "computer vision",
+        "atlasDecision": "Cautious",
+        "reviewStatus": "Periodic Review"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.0839,
+          37.3861
+        ]
+      },
+      "properties": {
+        "slug": "project-relate",
+        "projectName": "Project Relate",
+        "category": "Accessibility / speech recognition",
+        "city": "Mountain View",
+        "country": "United States",
+        "region": "Global",
+        "organizationType": "company research",
+        "participationModeGroup": "Contributory",
+        "technologyGroup": "speech recognition",
+        "atlasDecision": "Cautious",
+        "reviewStatus": "Periodic Review"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.1474,
+          43.0481
+        ]
+      },
+      "properties": {
+        "slug": "rehumanized-crowdsourcing",
+        "projectName": "Rehumanized Crowdsourcing",
+        "category": "Data labeling / ethics and bias mitigation",
+        "city": "Syracuse",
+        "country": "United States",
+        "region": "North America",
+        "organizationType": "university + industry partnership",
+        "participationModeGroup": "Community In The Loop",
+        "technologyGroup": "data labeling workflows for machine learning",
+        "atlasDecision": "Cautious",
+        "reviewStatus": "Periodic Review"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5021,
+          3.848
+        ]
+      },
+      "properties": {
+        "slug": "report-and-respond",
+        "projectName": "Report and Respond",
+        "category": "Humanitarian response / participatory AI",
+        "city": "Yaoundé",
+        "country": "Cameroon",
+        "region": "Africa",
+        "organizationType": "nonprofit consortium",
+        "participationModeGroup": "Co Production",
+        "technologyGroup": "rumour classification / SMS guidance",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.405,
+          52.52
+        ]
+      },
+      "properties": {
+        "slug": "responsible-ai-assessments",
+        "projectName": "Responsible AI Assessments",
+        "category": "AI governance / risk assessment",
+        "city": "Berlin",
+        "country": "Germany",
+        "region": "Multi Region",
+        "organizationType": "development program + audit organization",
+        "participationModeGroup": "Participatory Governance",
+        "technologyGroup": "auditing / risk assessment",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1276,
+          51.5072
+        ]
+      },
+      "properties": {
+        "slug": "safe-ai",
+        "projectName": "SAFE AI",
+        "category": "Humanitarian AI governance",
+        "city": "London",
+        "country": "United Kingdom",
+        "region": "Global",
+        "organizationType": "nonprofit consortium",
+        "participationModeGroup": "Participatory Governance",
+        "technologyGroup": "governance / assurance",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.5795,
+          39.8283
+        ]
+      },
+      "properties": {
+        "slug": "stela",
+        "projectName": "STELA",
+        "category": "AI alignment / norm elicitation",
+        "city": "United States (multiple communities)",
+        "country": "United States",
+        "region": "North America",
+        "organizationType": "research consortium",
+        "participationModeGroup": "Deliberative Co Design",
+        "technologyGroup": "LLM alignment / norm elicitation",
+        "atlasDecision": "Cautious",
+        "reviewStatus": "Periodic Review"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.9842,
+          14.5995
+        ]
+      },
+      "properties": {
+        "slug": "safeher",
+        "projectName": "SafeHer",
+        "category": "Gender justice / mobility safety AI",
+        "city": "Manila",
+        "country": "Philippines",
+        "region": "Asia",
+        "organizationType": "academic partnership",
+        "participationModeGroup": "Co Design",
+        "technologyGroup": "AI-assisted safety reporting",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.1207,
+          49.2827
+        ]
+      },
+      "properties": {
+        "slug": "salmonvision",
+        "projectName": "SalmonVision",
+        "category": "Environmental monitoring / computer vision",
+        "city": "Vancouver",
+        "country": "Canada",
+        "region": "North America",
+        "organizationType": "collaborative consortium",
+        "participationModeGroup": "Co Governance",
+        "technologyGroup": "computer vision",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.648,
+          -0.55
+        ]
+      },
+      "properties": {
+        "slug": "sauti-ya-ogiek-voice-of-the-ogiek",
+        "projectName": "Sauti Ya Ogiek / Voice of the Ogiek",
+        "category": "Indigenous knowledge / environmental justice",
+        "city": "Mau Forest",
+        "country": "Kenya",
+        "region": "Africa",
+        "organizationType": "community-university collaboration",
+        "participationModeGroup": "Community Led",
+        "technologyGroup": "AI-enhanced messaging / knowledge platform",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.8986,
+          35.994
+        ]
+      },
+      "properties": {
+        "slug": "sepsis-watch",
+        "projectName": "Sepsis Watch",
+        "category": "Public health / clinical prediction",
+        "city": "Durham",
+        "country": "United States",
+        "region": "North America",
+        "organizationType": "university health system",
+        "participationModeGroup": "Co Design",
+        "technologyGroup": "deep learning / risk prediction",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5704,
+          51.2362
+        ]
+      },
+      "properties": {
+        "slug": "signgpt",
+        "projectName": "SignGPT",
+        "category": "Accessibility / sign language AI",
+        "city": "Guildford",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "organizationType": "university consortium",
+        "participationModeGroup": "Co Design",
+        "technologyGroup": "sign language large model / multimodal translation",
+        "atlasDecision": "Cautious",
+        "reviewStatus": "Periodic Review"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5704,
+          51.2362
+        ]
+      },
+      "properties": {
+        "slug": "signapse",
+        "projectName": "Signapse",
+        "category": "Accessibility / sign language translation",
+        "city": "Guildford",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "organizationType": "university + industry partnership",
+        "participationModeGroup": "Community In The Loop",
+        "technologyGroup": "sign language translation",
+        "atlasDecision": "Cautious",
+        "reviewStatus": "Periodic Review"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.8198,
+          1.3521
+        ]
+      },
+      "properties": {
+        "slug": "singapore-national-ai-strategy-2-0",
+        "projectName": "Singapore National AI Strategy 2.0",
+        "category": "AI governance / national strategy consultation",
+        "city": "Singapore",
+        "country": "Singapore",
+        "region": "Asia",
+        "organizationType": "government",
+        "participationModeGroup": "Public Consultation",
+        "technologyGroup": "AI policy and strategy",
+        "atlasDecision": "Review Candidate",
+        "reviewStatus": "Manual Review Required"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.9959,
+          40.4406
+        ]
+      },
+      "properties": {
+        "slug": "smell-pittsburgh",
+        "projectName": "Smell Pittsburgh",
+        "category": "Environmental monitoring / citizen sensing",
+        "city": "Pittsburgh",
+        "country": "United States",
+        "region": "North America",
+        "organizationType": "university / research lab",
+        "participationModeGroup": "Civic Participation",
+        "technologyGroup": "crowdsourced sensing + data analytics",
+        "atlasDecision": "Cautious",
+        "reviewStatus": "Periodic Review"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.7038,
+          40.4168
+        ]
+      },
+      "properties": {
+        "slug": "spain-ai-regulatory-sandbox",
+        "projectName": "Spain AI Regulatory Sandbox",
+        "category": "AI governance / regulatory sandbox",
+        "city": "Madrid",
+        "country": "Spain",
+        "region": "Europe",
+        "organizationType": "government + regulator collaboration",
+        "participationModeGroup": "Participatory Governance",
+        "technologyGroup": "AI regulatory testing and compliance",
+        "atlasDecision": "Review Candidate",
+        "reviewStatus": "Manual Review Required"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5673,
+          45.5017
+        ]
+      },
+      "properties": {
+        "slug": "street-review",
+        "projectName": "Street Review",
+        "category": "Urban planning / streetscape analysis",
+        "city": "Montreal",
+        "country": "Canada",
+        "region": "North America",
+        "organizationType": "university / research lab",
+        "participationModeGroup": "Co Production",
+        "technologyGroup": "computer vision + participatory labeling",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.405,
+          52.52
+        ]
+      },
+      "properties": {
+        "slug": "syrian-archive-vframe",
+        "projectName": "Syrian Archive + VFRAME",
+        "category": "Human rights / computer vision for archives",
+        "city": "Berlin",
+        "country": "Germany",
+        "region": "Europe",
+        "organizationType": "nonprofit / research collaboration",
+        "participationModeGroup": "Community In The Loop",
+        "technologyGroup": "computer vision for video indexing",
+        "atlasDecision": "Review Candidate",
+        "reviewStatus": "Manual Review Required"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.1508,
+          51.2562
+        ]
+      },
+      "properties": {
+        "slug": "top-ki",
+        "projectName": "TOP.KI",
+        "category": "Accessibility / plain-language AI",
+        "city": "Wuppertal",
+        "country": "Germany",
+        "region": "Europe",
+        "organizationType": "university",
+        "participationModeGroup": "Co Design",
+        "technologyGroup": "text simplification and question translation",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5654,
+          25.033
+        ]
+      },
+      "properties": {
+        "slug": "taiwan-alignment-assemblies",
+        "projectName": "Taiwan Alignment Assemblies",
+        "category": "AI governance / civic deliberation",
+        "city": "Taipei",
+        "country": "Taiwan",
+        "region": "Asia",
+        "organizationType": "government + nonprofit partnership",
+        "participationModeGroup": "Participatory Governance",
+        "technologyGroup": "AI governance / public alignment",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          173.2643,
+          -35.1107
+        ]
+      },
+      "properties": {
+        "slug": "te-hiku-media-korero-maori-asr-tts",
+        "projectName": "Te Hiku Media - Kōrero Māori ASR/TTS",
+        "category": "Indigenous language technology",
+        "city": "Kaitaia",
+        "country": "New Zealand",
+        "region": "Oceania",
+        "organizationType": "Indigenous media organization",
+        "participationModeGroup": "Community Led",
+        "technologyGroup": "speech data / ASR-TTS",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1276,
+          51.5072
+        ]
+      },
+      "properties": {
+        "slug": "the-citizens-biometrics-council",
+        "projectName": "The Citizens' Biometrics Council",
+        "category": "AI governance / biometrics",
+        "city": "London",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "organizationType": "nonprofit / research institute",
+        "participationModeGroup": "Participatory Governance",
+        "technologyGroup": "biometrics, facial recognition, voice recognition",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.0839,
+          37.3861
+        ]
+      },
+      "properties": {
+        "slug": "the-equitable-ai-research-roundtable-earr",
+        "projectName": "The Equitable AI Research Roundtable (EARR)",
+        "category": "AI governance / community-based research coalition",
+        "city": "Mountain View",
+        "country": "United States",
+        "region": "North America",
+        "organizationType": "company research",
+        "participationModeGroup": "Participatory Governance",
+        "technologyGroup": "responsible AI research governance",
+        "atlasDecision": "Cautious",
+        "reviewStatus": "Periodic Review"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1218,
+          52.2053
+        ]
+      },
+      "properties": {
+        "slug": "the-global-ai-narratives-gain",
+        "projectName": "The Global AI Narratives (GAIN)",
+        "category": "AI governance / participatory narrative research",
+        "city": "Cambridge",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "organizationType": "research institute",
+        "participationModeGroup": "Participatory Research",
+        "technologyGroup": "AI ethics and governance narratives",
+        "atlasDecision": "Review Candidate",
+        "reviewStatus": "Manual Review Required"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.7762,
+          -41.2865
+        ]
+      },
+      "properties": {
+        "slug": "toward-algorithmic-accountability-in-public-services",
+        "projectName": "Toward Algorithmic Accountability in Public Services",
+        "category": "Algorithmic governance / public services",
+        "city": "Wellington",
+        "country": "New Zealand",
+        "region": "Multi Region",
+        "organizationType": "university + research institute collaboration",
+        "participationModeGroup": "Participatory Research",
+        "technologyGroup": "algorithmic decision systems in public services",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.5795,
+          39.8283
+        ]
+      },
+      "properties": {
+        "slug": "u-s-public-assembly-on-high-risk-ai",
+        "projectName": "U.S. Public Assembly on High Risk AI",
+        "category": "Public dialogue / AI governance",
+        "city": "United States (online)",
+        "country": "United States",
+        "region": "North America",
+        "organizationType": "nonprofit + university collaboration",
+        "participationModeGroup": "Participatory Governance",
+        "technologyGroup": "high-risk AI systems / governance",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.9959,
+          40.4406
+        ]
+      },
+      "properties": {
+        "slug": "unwritten-magic",
+        "projectName": "Unwritten Magic",
+        "category": "Education / AI dialogue co-design",
+        "city": "Pittsburgh",
+        "country": "United States",
+        "region": "North America",
+        "organizationType": "research consortium",
+        "participationModeGroup": "Co Design",
+        "technologyGroup": "conversational AI / dialogue systems",
+        "atlasDecision": "Core",
+        "reviewStatus": "Periodic Review"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.9605,
+          23.6978
+        ]
+      },
+      "properties": {
+        "slug": "utilizing-ai-to-enhance-information-integrity-citizens-deliberative-assembly",
+        "projectName": "Utilizing AI to Enhance Information Integrity Citizens' Deliberative Assembly",
+        "category": "AI governance / information integrity",
+        "city": "Taiwan (online)",
+        "country": "Taiwan",
+        "region": "Asia",
+        "organizationType": "government",
+        "participationModeGroup": "Participatory Governance",
+        "technologyGroup": "AI evaluation and information integrity tools",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.9959,
+          40.4406
+        ]
+      },
+      "properties": {
+        "slug": "webuildai",
+        "projectName": "WeBuildAI",
+        "category": "Algorithmic governance",
+        "city": "Pittsburgh",
+        "country": "United States",
+        "region": "North America",
+        "organizationType": "nonprofit + university collaboration",
+        "participationModeGroup": "Co Design",
+        "technologyGroup": "matching / optimization",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5674,
+          45.5019
+        ]
+      },
+      "properties": {
+        "slug": "wedesign",
+        "projectName": "WeDesign",
+        "category": "Urban planning / generative AI",
+        "city": "Montréal",
+        "country": "Canada",
+        "region": "North America",
+        "organizationType": "university / research lab",
+        "participationModeGroup": "Deliberative Co Design",
+        "technologyGroup": "generative AI / text-to-image",
+        "atlasDecision": "Cautious",
+        "reviewStatus": "Periodic Review"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.4011,
+          37.7891
+        ]
+      },
+      "properties": {
+        "slug": "wikimedia-ores",
+        "projectName": "Wikimedia ORES",
+        "category": "Online governance / content moderation",
+        "city": "San Francisco",
+        "country": "United States",
+        "region": "Global",
+        "organizationType": "nonprofit + peer production community",
+        "participationModeGroup": "Participatory Governance",
+        "technologyGroup": "classification",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3517,
+          50.8503
+        ]
+      },
+      "properties": {
+        "slug": "amai",
+        "projectName": "amai!",
+        "category": "Citizen science / participatory AI",
+        "city": "Brussels",
+        "country": "Belgium",
+        "region": "Europe",
+        "organizationType": "university + civic methodology partner",
+        "participationModeGroup": "Deliberative Co Design",
+        "technologyGroup": "multiple AI methods",
+        "atlasDecision": "Core",
+        "reviewStatus": "Ready"
+      }
+    }
+  ]
+}
