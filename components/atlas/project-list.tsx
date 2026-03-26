@@ -42,9 +42,8 @@ export function ProjectList({
             {projects.length} shown
             {selectedLocationLabel ? ` · ${selectedLocationLabel}` : ""}
           </p>
-          <p className="mt-2 max-w-3xl text-sm text-subtle">
-            These records include participatory AI projects and participation for AI: work on AI and work that
-            helps shape AI systems, data, models, governance, and oversight.
+          <p className="mt-2 max-w-full overflow-x-auto whitespace-nowrap text-sm text-subtle">
+            These records include participatory AI projects and participation for AI: work on AI and work that helps shape AI systems, data, models, governance, and oversight.
           </p>
         </div>
         {selectedLocationLabel ? (

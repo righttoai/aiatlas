@@ -38,6 +38,25 @@ function StatusMessage({ state }: { state: SubmitState }) {
   );
 }
 
+async function loadPublicActivity(projectSlug: string) {
+  const [issuesResponse, annotationsResponse] = await Promise.all([
+    fetch(`/api/issues?projectSlug=${encodeURIComponent(projectSlug)}`, { cache: "no-store" }),
+    fetch(`/api/annotations?projectSlug=${encodeURIComponent(projectSlug)}`, { cache: "no-store" })
+  ]);
+
+  if (!issuesResponse.ok || !annotationsResponse.ok) {
+    throw new Error("Unable to load community activity.");
+  }
+
+  const issuesData = (await issuesResponse.json()) as { items: IssueItem[] };
+  const annotationsData = (await annotationsResponse.json()) as { items: AnnotationItem[] };
+
+  return {
+    issues: issuesData.items,
+    annotations: annotationsData.items
+  };
+}
+
 export function CommunityPanel({ projectSlug, projectName }: CommunityPanelProps) {
   const [loadState, setLoadState] = useState<LoadState>("loading");
   const [issues, setIssues] = useState<IssueItem[]>([]);
@@ -59,21 +78,11 @@ export function CommunityPanel({ projectSlug, projectName }: CommunityPanelProps
     async function load() {
       try {
         setLoadState("loading");
-        const [issuesResponse, annotationsResponse] = await Promise.all([
-          fetch(`/api/issues?projectSlug=${encodeURIComponent(projectSlug)}`),
-          fetch(`/api/annotations?projectSlug=${encodeURIComponent(projectSlug)}`)
-        ]);
-
-        if (!issuesResponse.ok || !annotationsResponse.ok) {
-          throw new Error("Unable to load community activity.");
-        }
-
-        const issuesData = (await issuesResponse.json()) as { items: IssueItem[] };
-        const annotationsData = (await annotationsResponse.json()) as { items: AnnotationItem[] };
+        const activity = await loadPublicActivity(projectSlug);
 
         if (!cancelled) {
-          setIssues(issuesData.items);
-          setAnnotations(annotationsData.items);
+          setIssues(activity.issues);
+          setAnnotations(activity.annotations);
           setLoadState("idle");
         }
       } catch {
@@ -112,16 +121,26 @@ export function CommunityPanel({ projectSlug, projectName }: CommunityPanelProps
         })
       });
 
-      const data = (await response.json()) as { message?: string };
+      const data = (await response.json()) as { item?: IssueItem; message?: string };
 
       if (!response.ok) {
         throw new Error(data.message || "Unable to submit issue.");
       }
 
       issueFormRef.current?.reset();
+      if (data.item) {
+        setIssues((current) => [data.item!, ...current.filter((item) => item.id !== data.item!.id)]);
+        setLoadState("idle");
+      } else {
+        const activity = await loadPublicActivity(projectSlug);
+        setIssues(activity.issues);
+        setAnnotations(activity.annotations);
+        setLoadState("idle");
+      }
       setIssueState({
         type: "success",
-        message: "Review issue created."
+        message:
+          "Thank you for flagging this. Your correction or dispute has been received and added to the public activity log for review."
       });
     } catch (error) {
       setIssueState({
@@ -153,16 +172,26 @@ export function CommunityPanel({ projectSlug, projectName }: CommunityPanelProps
         })
       });
 
-      const data = (await response.json()) as { message?: string };
+      const data = (await response.json()) as { item?: AnnotationItem; message?: string };
 
       if (!response.ok) {
         throw new Error(data.message || "Unable to submit annotation.");
       }
 
       annotationFormRef.current?.reset();
+      if (data.item) {
+        setAnnotations((current) => [data.item!, ...current.filter((item) => item.id !== data.item!.id)]);
+        setLoadState("idle");
+      } else {
+        const activity = await loadPublicActivity(projectSlug);
+        setIssues(activity.issues);
+        setAnnotations(activity.annotations);
+        setLoadState("idle");
+      }
       setAnnotationState({
         type: "success",
-        message: "Review issue created."
+        message:
+          "Thank you for adding context. Your annotation has been received and added to the public activity log."
       });
     } catch (error) {
       setAnnotationState({
@@ -203,7 +232,8 @@ export function CommunityPanel({ projectSlug, projectName }: CommunityPanelProps
       redactionFormRef.current?.reset();
       setRedactionState({
         type: "success",
-        message: "Review issue created."
+        message:
+          "Thank you for reaching out. Your restricted disclosure request has been received privately and will be reviewed with care."
       });
     } catch (error) {
       setRedactionState({

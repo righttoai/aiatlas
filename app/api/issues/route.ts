@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { readRuntimeCollection } from "@/lib/runtime-store";
 import { getProjectBySlug } from "@/lib/data";
 import {
+  getPublishedProjectIssues,
   getModerationErrorMessage,
   getModerationErrorStatus,
   submitProjectIssue
@@ -12,14 +13,34 @@ import { validateIssueInput } from "@/lib/validators";
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
+function dedupeIssues(items: IssueItem[]) {
+  const seen = new Set<string>();
+
+  return items.filter((item) => {
+    const key = [item.projectSlug, item.kind, item.title, item.detail, item.updatedAt].join("|");
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
 export async function GET(request: NextRequest) {
   const projectSlug = request.nextUrl.searchParams.get("projectSlug");
-  const items = await readRuntimeCollection<IssueItem>("issues");
+  const runtimeItems = await readRuntimeCollection<IssueItem>("issues");
+  let githubItems: IssueItem[] = [];
 
-  const published = items
-    .filter((item) => item.public && item.status === "published")
-    .filter((item) => (projectSlug ? item.projectSlug === projectSlug : true))
-    .sort((a, b) => b.updatedAt.localeCompare(a.updatedAt));
+  try {
+    githubItems = await getPublishedProjectIssues(projectSlug ?? undefined);
+  } catch (error) {
+    console.error("Unable to load published GitHub issues", error);
+  }
+
+  const published = dedupeIssues(
+    [...runtimeItems, ...githubItems]
+      .filter((item) => item.public && item.status === "published")
+      .filter((item) => (projectSlug ? item.projectSlug === projectSlug : true))
+      .sort((a, b) => b.updatedAt.localeCompare(a.updatedAt))
+  );
 
   return NextResponse.json({ items: published });
 }
@@ -30,12 +51,17 @@ export async function POST(request: NextRequest) {
     const item = validateIssueInput(payload);
     const project = await getProjectBySlug(item.projectSlug);
     const result = await submitProjectIssue(item, project?.projectName ?? item.projectSlug);
+    const publishedItem: IssueItem = {
+      ...item,
+      status: "published"
+    };
 
     return NextResponse.json(
       {
         ok: true,
         itemId: item.id,
-        issueUrl: result.issueUrl
+        issueUrl: result.issueUrl,
+        item: publishedItem
       },
       { status: 201 }
     );

@@ -42,7 +42,8 @@ export function ContributionForm() {
       formRef.current?.reset();
       setStatus({
         type: "success",
-        message: "Review issue and draft pull request created."
+        message:
+          "Thank you for contributing a record. We opened a review issue and draft pull request so the atlas team can take it forward."
       });
     } catch (error) {
       setStatus({

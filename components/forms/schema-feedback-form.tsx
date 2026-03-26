@@ -42,7 +42,8 @@ export function SchemaFeedbackForm() {
       formRef.current?.reset();
       setStatus({
         type: "success",
-        message: "Review issue created."
+        message:
+          "Thank you for helping improve the atlas. Your feedback has been received and added to the review queue."
       });
     } catch (error) {
       setStatus({

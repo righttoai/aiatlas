@@ -25,6 +25,18 @@ type GitHubIssueResponse = {
   html_url: string;
 };
 
+type GitHubRepositoryIssue = {
+  id: number;
+  number: number;
+  html_url: string;
+  title: string;
+  body: string | null;
+  state: "open" | "closed";
+  created_at: string;
+  updated_at: string;
+  pull_request?: Record<string, unknown>;
+};
+
 type GitHubPullRequestResponse = {
   number: number;
   html_url: string;
@@ -126,6 +138,10 @@ function escapeMarkdown(value: string) {
   return value.replace(/\r\n/g, "\n").trim();
 }
 
+function escapeRegExp(value: string) {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
 function formatField(label: string, value: string | null | undefined) {
   if (!value) return null;
   return `- **${label}:** ${escapeMarkdown(value)}`;
@@ -151,6 +167,27 @@ function buildContributorLines(
 function csvEscape(value: string) {
   if (!/[",\n]/.test(value)) return value;
   return `"${value.replace(/"/g, "\"\"")}"`;
+}
+
+function parseMarkdownField(body: string | null | undefined, label: string) {
+  if (!body) return null;
+
+  const match = body.match(
+    new RegExp(`- \\*\\*${escapeRegExp(label)}:\\*\\*\\s*([\\s\\S]*?)(?=\\n- \\*\\*|\\n## |\\nSubmission ID:|$)`)
+  );
+  const value = match?.[1]?.trim();
+
+  return value?.length ? value : null;
+}
+
+function parseOptionalUrl(value: string | null | undefined) {
+  if (!value) return null;
+
+  try {
+    return new URL(value).toString();
+  } catch {
+    return null;
+  }
 }
 
 function appendCsvRow(csvContent: string, record: Record<string, string>) {
@@ -189,6 +226,32 @@ async function createIssueComment(issueNumber: number, body: string) {
       body: JSON.stringify({ body })
     }
   );
+}
+
+async function listRepositoryIssues() {
+  try {
+    const issues: GitHubRepositoryIssue[] = [];
+
+    for (let page = 1; page <= 5; page += 1) {
+      const pageItems = await githubRequest<GitHubRepositoryIssue[]>(
+        `/repos/${getConfig().owner}/${getConfig().repo}/issues?state=all&per_page=100&page=${page}`
+      );
+      const issueItems = pageItems.filter((item) => !item.pull_request);
+      issues.push(...issueItems);
+
+      if (pageItems.length < 100) {
+        break;
+      }
+    }
+
+    return issues;
+  } catch (error) {
+    if (error instanceof ModerationConfigurationError) {
+      return [] as GitHubRepositoryIssue[];
+    }
+
+    throw error;
+  }
 }
 
 async function getHeadSha(branch: string) {
@@ -541,6 +604,78 @@ export async function submitRedactionRequest(item: RedactionItem, projectName: s
   return {
     issueUrl: issue.html_url
   };
+}
+
+export async function getPublishedProjectIssues(projectSlug?: string): Promise<IssueItem[]> {
+  const issues = await listRepositoryIssues();
+  const published: IssueItem[] = [];
+
+  for (const item of issues) {
+    if (!item.title.startsWith("Correction: ") && !item.title.startsWith("Dispute: ")) continue;
+    if (!item.body?.includes("Project correction or dispute submitted through the public atlas form.")) continue;
+
+    const parsedProjectSlug = parseMarkdownField(item.body, "Project slug");
+    if (!parsedProjectSlug) continue;
+    if (projectSlug && parsedProjectSlug !== projectSlug) continue;
+
+    const kindField = parseMarkdownField(item.body, "Type");
+    const kind: IssueItem["kind"] =
+      kindField === "dispute" || item.title.startsWith("Dispute: ") ? "dispute" : "correction";
+    const title =
+      parseMarkdownField(item.body, "Title") ?? item.title.replace(/^(Correction|Dispute):\s*/, "").trim();
+    const detail = parseMarkdownField(item.body, "Detail");
+
+    if (!title || !detail) continue;
+
+    published.push({
+      id: `github-issue-${item.number}`,
+      createdAt: item.created_at,
+      updatedAt: item.updated_at,
+      status: "published",
+      public: true,
+      projectSlug: parsedProjectSlug,
+      kind,
+      title,
+      detail,
+      evidenceUrl: parseOptionalUrl(parseMarkdownField(item.body, "Evidence URL")),
+      contributorName: null,
+      contributorEmail: null
+    });
+  }
+
+  return published.sort((a, b) => b.updatedAt.localeCompare(a.updatedAt));
+}
+
+export async function getPublishedProjectAnnotations(projectSlug?: string): Promise<AnnotationItem[]> {
+  const issues = await listRepositoryIssues();
+  const published: AnnotationItem[] = [];
+
+  for (const item of issues) {
+    if (!item.title.startsWith("Annotation: ")) continue;
+    if (!item.body?.includes("Project annotation submitted through the public atlas form.")) continue;
+
+    const parsedProjectSlug = parseMarkdownField(item.body, "Project slug");
+    if (!parsedProjectSlug) continue;
+    if (projectSlug && parsedProjectSlug !== projectSlug) continue;
+
+    const note = parseMarkdownField(item.body, "Annotation");
+    if (!note) continue;
+
+    published.push({
+      id: `github-annotation-${item.number}`,
+      createdAt: item.created_at,
+      updatedAt: item.updated_at,
+      status: "published",
+      public: true,
+      projectSlug: parsedProjectSlug,
+      note,
+      evidenceUrl: parseOptionalUrl(parseMarkdownField(item.body, "Evidence URL")),
+      contributorName: null,
+      submissionLanguage: parseMarkdownField(item.body, "Submission language")
+    });
+  }
+
+  return published.sort((a, b) => b.updatedAt.localeCompare(a.updatedAt));
 }
 
 export function getModerationErrorMessage(error: unknown) {
