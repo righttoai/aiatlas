@@ -37,12 +37,14 @@ export function ProjectList({
       <div className="flex flex-wrap items-center justify-between gap-3">
         <div>
           <div className="text-[11px] font-semibold uppercase tracking-[0.14em] text-faint">Records</div>
-          <h2 className="mt-1 text-[1.95rem] font-semibold leading-tight text-foreground">Project records</h2>
+          <h2 className="mt-1 text-[1.65rem] font-semibold leading-tight text-foreground sm:text-[1.95rem]">
+            Project records
+          </h2>
           <p className="mt-1 text-sm text-subtle">
             {projects.length} shown
             {selectedLocationLabel ? ` · ${selectedLocationLabel}` : ""}
           </p>
-          <p className="mt-2 max-w-full overflow-x-auto whitespace-nowrap text-sm text-subtle">
+          <p className="mt-2 max-w-3xl text-sm leading-6 text-subtle">
             These records include participatory AI projects and participation for AI: work on AI and work that helps shape AI systems, data, models, governance, and oversight.
           </p>
         </div>
@@ -66,8 +68,8 @@ export function ProjectList({
 
           return (
             <Card key={project.slug} className={selected ? "border-accent/30 bg-surface-soft/92" : undefined}>
-              <div className="flex items-start justify-between gap-4">
-                <div className="space-y-3">
+              <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between sm:gap-4">
+                <div className="min-w-0 space-y-3">
                   <div className="flex flex-wrap items-center gap-2">
                     {selected ? (
                       <Badge variant="accent">
@@ -102,7 +104,7 @@ export function ProjectList({
                     href={project.provenanceUrl}
                     target="_blank"
                     rel="noreferrer"
-                    className="inline-flex shrink-0 items-center gap-2 rounded-md border border-border/50 bg-surface px-3 py-2 text-sm text-subtle transition hover:border-border/70 hover:bg-surface-soft hover:text-accent"
+                    className="inline-flex w-full shrink-0 items-center justify-center gap-2 rounded-md border border-border/50 bg-surface px-3 py-2 text-sm text-subtle transition hover:border-border/70 hover:bg-surface-soft hover:text-accent sm:w-auto sm:justify-start"
                   >
                     Source
                     <ExternalLink className="h-3.5 w-3.5" />
@@ -139,7 +141,7 @@ export function ProjectList({
                 {project.activityStatusGroup ? <Badge variant="neutral">{project.activityStatusGroup}</Badge> : null}
               </div>
 
-              <div className="mt-5 flex flex-wrap items-center justify-between gap-3 border-t border-border/45 pt-4">
+              <div className="mt-5 flex flex-col items-start gap-3 border-t border-border/45 pt-4 sm:flex-row sm:items-center sm:justify-between">
                 <Link href={`/projects/${project.slug}`} className="text-sm font-medium text-accent">
                   Open record
                 </Link>

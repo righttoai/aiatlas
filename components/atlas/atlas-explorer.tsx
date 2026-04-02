@@ -3,10 +3,10 @@
 import dynamic from "next/dynamic";
 import { Suspense, startTransition, useEffect, useMemo, useState } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import { X } from "lucide-react";
+import { Filter, X } from "lucide-react";
 import { FiltersPanel } from "@/components/atlas/filters-panel";
 import { ProjectList } from "@/components/atlas/project-list";
-import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { EMPTY_FILTERS } from "@/lib/constants";
 import {
@@ -43,15 +43,16 @@ const AtlasMap = dynamic(
   () => import("@/components/atlas/atlas-map").then((module) => module.AtlasMap),
   {
     ssr: false,
-    loading: () => <Card className="h-[24rem] sm:h-[30rem] lg:h-[36rem] xl:h-[43rem]" />
+    loading: () => <Card className="h-[18.5rem] sm:h-[24rem] md:h-[30rem] lg:h-[44rem] xl:h-[50rem]" />
   }
 );
 
-function AtlasExplorerInner({ projects, stats }: AtlasExplorerProps) {
+function AtlasExplorerInner({ projects }: AtlasExplorerProps) {
   const searchParams = useSearchParams();
   const pathname = usePathname();
   const router = useRouter();
   const [selectedMarkerId, setSelectedMarkerId] = useState<string | null>(null);
+  const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
 
   const filters = useMemo(() => parseFiltersFromSearchParams(searchParams), [searchParams]);
   const facets = useMemo(() => getFacetValues(projects), [projects]);
@@ -167,54 +168,87 @@ function AtlasExplorerInner({ projects, stats }: AtlasExplorerProps) {
 
     return chips;
   }, [filters]);
+  const activeFilterCount = activeChips.length;
 
   return (
-    <div className="grid items-start gap-4 xl:grid-cols-[15rem,minmax(0,1fr)]">
-      <div className="order-2 xl:order-1">
-        <FiltersPanel
-          filters={filters}
-          facets={facets}
-          resultCount={filteredProjects.length}
-          onSearchChange={(value) => updateFilters({ q: value })}
-          onToggleArrayValue={toggleArrayValue}
-          onSetParticipationVisibility={(value) => updateFilters({ participationVisibility: value })}
-          onSetFundingPresence={(value) => updateFilters({ fundingPresence: value })}
-          onSetSort={(value) => updateFilters({ sort: value })}
-          onClear={() => replaceFilters(EMPTY_FILTERS)}
-        />
+    <div className="space-y-4 sm:space-y-5">
+      <div className="xl:hidden">
+        <Card className="p-3.5 sm:p-4">
+          <div className="flex flex-wrap items-center justify-between gap-3">
+            <div>
+              <div className="text-[11px] font-semibold uppercase tracking-[0.14em] text-faint">
+                Explore
+              </div>
+              <p className="mt-1 text-sm text-subtle">
+                {filteredProjects.length} shown · {geocodedCount} mapped
+              </p>
+            </div>
+
+            <Button
+              variant="secondary"
+              size="sm"
+              onClick={() => setMobileFiltersOpen((open) => !open)}
+              aria-expanded={mobileFiltersOpen}
+              aria-controls="atlas-mobile-filters"
+            >
+              <Filter className="mr-2 h-4 w-4" />
+              {mobileFiltersOpen ? "Hide filters" : "Show filters"}
+              {activeFilterCount ? ` (${activeFilterCount})` : ""}
+            </Button>
+          </div>
+        </Card>
       </div>
 
-      <div className="order-1 space-y-5 xl:order-2">
-        <AtlasMap
-          groups={grouped}
-          selectedMarkerId={selectedMarkerId}
-          onSelectMarker={setSelectedMarkerId}
-          totalResults={filteredProjects.length}
-          geocodedResults={geocodedCount}
-        />
+      <div className="grid items-start gap-4 xl:grid-cols-[15rem,minmax(0,1fr)]">
+        <div
+          id="atlas-mobile-filters"
+          className={`${mobileFiltersOpen ? "block" : "hidden"} order-1 xl:order-1 xl:block`}
+        >
+          <FiltersPanel
+            filters={filters}
+            facets={facets}
+            resultCount={filteredProjects.length}
+            onSearchChange={(value) => updateFilters({ q: value })}
+            onToggleArrayValue={toggleArrayValue}
+            onSetParticipationVisibility={(value) => updateFilters({ participationVisibility: value })}
+            onSetFundingPresence={(value) => updateFilters({ fundingPresence: value })}
+            onSetSort={(value) => updateFilters({ sort: value })}
+            onClear={() => replaceFilters(EMPTY_FILTERS)}
+          />
+        </div>
 
-        {activeChips.length ? (
-          <div className="flex flex-wrap gap-1.5">
-            {activeChips.map((chip) => (
-              <button
-                key={chip.id}
-                type="button"
-                onClick={chip.onRemove}
-                className="surface-chip inline-flex items-center gap-1.5 rounded-md border px-2.5 py-1.5 text-[11px] transition"
-              >
-                {chip.label}
-                <X className="h-3 w-3" />
-              </button>
-            ))}
-          </div>
-        ) : null}
+        <div className="order-2 space-y-4 sm:space-y-5 xl:order-2">
+          <AtlasMap
+            groups={grouped}
+            selectedMarkerId={selectedMarkerId}
+            onSelectMarker={setSelectedMarkerId}
+            totalResults={filteredProjects.length}
+            geocodedResults={geocodedCount}
+          />
 
-        <ProjectList
-          projects={orderedProjects}
-          selectedSlugs={selectedSlugs}
-          selectedLocationLabel={selectedGroup?.label ?? null}
-          onClearSelection={() => setSelectedMarkerId(null)}
-        />
+          {activeChips.length ? (
+            <div className="flex flex-wrap gap-1.5 sm:gap-2">
+              {activeChips.map((chip) => (
+                <button
+                  key={chip.id}
+                  type="button"
+                  onClick={chip.onRemove}
+                  className="surface-chip inline-flex items-center gap-1.5 rounded-md border px-2.5 py-1.5 text-[11px] transition"
+                >
+                  {chip.label}
+                  <X className="h-3 w-3" />
+                </button>
+              ))}
+            </div>
+          ) : null}
+
+          <ProjectList
+            projects={orderedProjects}
+            selectedSlugs={selectedSlugs}
+            selectedLocationLabel={selectedGroup?.label ?? null}
+            onClearSelection={() => setSelectedMarkerId(null)}
+          />
+        </div>
       </div>
     </div>
   );
@@ -224,12 +258,15 @@ export function AtlasExplorer(props: AtlasExplorerProps) {
   return (
     <Suspense
       fallback={
-        <div className="grid gap-4 xl:grid-cols-[15rem,minmax(0,1fr)]">
-          <Card className="order-2 h-[32rem] xl:order-1" />
-          <div className="order-1 space-y-5 xl:order-2">
-            <Card className="h-36" />
-            <Card className="h-[34rem]" />
-            <Card className="h-[36rem]" />
+        <div className="space-y-4 sm:space-y-5">
+          <Card className="h-[4.75rem] xl:hidden" />
+          <div className="grid gap-4 xl:grid-cols-[15rem,minmax(0,1fr)]">
+            <Card className="hidden h-[32rem] xl:block" />
+            <div className="space-y-4 sm:space-y-5">
+              <Card className="h-[18.5rem] sm:h-[24rem] md:h-[30rem] lg:h-[44rem] xl:h-[50rem]" />
+              <Card className="h-[24rem] sm:h-[32rem]" />
+              <Card className="h-[36rem]" />
+            </div>
           </div>
         </div>
       }

@@ -130,7 +130,7 @@ export function AtlasMap({
         </div>
 
         <div
-          className="h-[28rem] w-full sm:h-[34rem] lg:h-[44rem] xl:h-[50rem]"
+          className="h-[18.5rem] w-full sm:h-[24rem] md:h-[30rem] lg:h-[44rem] xl:h-[50rem]"
           style={{
             backgroundColor: "rgb(var(--map-ocean))",
             backgroundImage: "linear-gradient(180deg, rgb(var(--map-ocean)), rgb(var(--map-ocean) / 0.9))"
@@ -250,7 +250,7 @@ export function AtlasMap({
             </div>
           ) : null}
 
-          <div className="pointer-events-none absolute inset-x-0 bottom-0 z-20 flex flex-col gap-2.5 p-2.5 sm:flex-row sm:items-end sm:p-3">
+          <div className="pointer-events-none absolute inset-x-0 bottom-0 z-20 flex flex-col gap-2.5 p-2 sm:flex-row sm:items-end sm:p-3">
             {selectedGroup ? (
               <div
                 className={cn(
@@ -277,7 +277,7 @@ export function AtlasMap({
                   </Button>
                 </div>
 
-                <div className="mt-3 max-h-[18rem] space-y-2.5 overflow-auto pr-1">
+                <div className="mt-3 max-h-[14rem] space-y-2.5 overflow-auto pr-1 sm:max-h-[18rem]">
                   {selectedProjects.map((project) => {
                     const meta = [project.category, project.participationModeGroup, project.activityStatusGroup]
                       .filter(Boolean)
@@ -330,14 +330,24 @@ export function AtlasMap({
               </div>
             ) : null}
 
-            <div className="pointer-events-auto ml-auto flex items-center gap-2 self-end rounded-md border border-border/45 bg-surface/96 px-2 py-2 sm:self-auto">
-              <Button variant="ghost" size="sm" className="h-11 w-11 rounded-md p-0" onClick={() => adjustZoom(-0.35)}>
+            <div className="pointer-events-auto flex w-full items-center justify-between gap-2 self-end rounded-md border border-border/45 bg-surface/96 px-2 py-2 sm:ml-auto sm:w-auto sm:justify-start sm:self-auto">
+              <Button
+                variant="ghost"
+                size="sm"
+                className="h-10 w-10 rounded-md p-0 sm:h-11 sm:w-11"
+                onClick={() => adjustZoom(-0.35)}
+              >
                 <Minus className="h-5 w-5" />
               </Button>
-              <Button variant="ghost" size="sm" className="h-11 w-11 rounded-md p-0" onClick={() => adjustZoom(0.35)}>
+              <Button
+                variant="ghost"
+                size="sm"
+                className="h-10 w-10 rounded-md p-0 sm:h-11 sm:w-11"
+                onClick={() => adjustZoom(0.35)}
+              >
                 <Plus className="h-5 w-5" />
               </Button>
-              <Button variant="ghost" className="h-9 rounded-md px-4 text-xs" onClick={resetView}>
+              <Button variant="ghost" className="h-9 rounded-md px-3 text-xs sm:px-4" onClick={resetView}>
                 <RotateCcw className="mr-2 h-3.5 w-3.5" />
                 Reset
               </Button>
