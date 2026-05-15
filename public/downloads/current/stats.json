@@ -1,166 +1,170 @@
 {
-  "generatedAt": "2026-03-24T00:41:00.482Z",
+  "generatedAt": "2026-05-15T16:10:49.112Z",
   "paperReported": {
-    "totalProjects": 115,
-    "normalizedCountries": 29,
-    "coreProjects": 63,
-    "cautiousProjects": 36,
-    "reviewCandidates": 16,
-    "readyProjects": 59
+    "totalProjects": 131,
+    "normalizedCountries": 36,
+    "coreProjects": 78,
+    "cautiousProjects": 52,
+    "reviewCandidates": 1,
+    "readyProjects": 78
   },
   "dataDerived": {
-    "totalProjects": 115,
-    "normalizedCountries": 29,
-    "tags": 198,
-    "categories": 91
+    "totalProjects": 131,
+    "normalizedCountries": 36,
+    "tags": 179,
+    "categories": 80
   },
   "fieldCompleteness": [
     {
       "field": "city",
       "label": "City or local anchor",
-      "present": 115,
-      "total": 115,
-      "percent": 100,
+      "present": 130,
+      "total": 131,
+      "percent": 99.2,
       "missingnessLevel": "Low missingness"
     },
     {
       "field": "leadOrg",
       "label": "Lead organization",
-      "present": 115,
-      "total": 115,
+      "present": 131,
+      "total": 131,
       "percent": 100,
       "missingnessLevel": "Low missingness"
     },
     {
       "field": "projectDocumentationLink",
-      "label": "Official or source link",
-      "present": 115,
-      "total": 115,
+      "label": "Primary documentation or evidence link",
+      "present": 131,
+      "total": 131,
       "percent": 100,
       "missingnessLevel": "Low missingness"
     },
     {
       "field": "technology",
       "label": "AI modality",
-      "present": 115,
-      "total": 115,
+      "present": 131,
+      "total": 131,
       "percent": 100,
       "missingnessLevel": "Low missingness"
     },
     {
       "field": "secondaryCategory",
       "label": "Application domain",
-      "present": 115,
-      "total": 115,
+      "present": 131,
+      "total": 131,
       "percent": 100,
       "missingnessLevel": "Low missingness"
     },
     {
       "field": "participants",
       "label": "Participants",
-      "present": 115,
-      "total": 115,
+      "present": 131,
+      "total": 131,
       "percent": 100,
       "missingnessLevel": "Low missingness"
     },
     {
       "field": "participationMethods",
       "label": "Participation methods",
-      "present": 115,
-      "total": 115,
+      "present": 131,
+      "total": 131,
       "percent": 100,
       "missingnessLevel": "Low missingness"
     },
     {
       "field": "participatoryEvidence",
       "label": "Participatory evidence",
-      "present": 115,
-      "total": 115,
+      "present": 131,
+      "total": 131,
       "percent": 100,
       "missingnessLevel": "Low missingness"
     },
     {
       "field": "reviewStatus",
       "label": "Review status",
-      "present": 115,
-      "total": 115,
+      "present": 131,
+      "total": 131,
       "percent": 100,
       "missingnessLevel": "Low missingness"
     },
     {
       "field": "startYear",
       "label": "Start year",
-      "present": 115,
-      "total": 115,
-      "percent": 100,
+      "present": 118,
+      "total": 131,
+      "percent": 90.1,
       "missingnessLevel": "Low missingness"
     }
   ],
   "regions": [
     {
       "name": "North America",
-      "count": 37
+      "count": 45
     },
     {
       "name": "Europe",
       "count": 27
     },
     {
-      "name": "Global",
-      "count": 17
-    },
-    {
       "name": "Africa",
-      "count": 10
-    },
-    {
-      "name": "Asia",
-      "count": 9
-    },
-    {
-      "name": "Latin America",
-      "count": 9
-    },
-    {
-      "name": "Multi Region",
-      "count": 3
-    },
-    {
-      "name": "Oceania",
-      "count": 3
-    }
-  ],
-  "countries": [
-    {
-      "name": "United States",
-      "count": 33
+      "count": 14
     },
     {
       "name": "Global",
       "count": 12
     },
     {
-      "name": "Canada",
-      "count": 11
-    },
-    {
-      "name": "United Kingdom",
+      "name": "Latin America",
       "count": 10
     },
     {
-      "name": "Germany",
+      "name": "Multi Region",
+      "count": 9
+    },
+    {
+      "name": "Asia",
       "count": 8
     },
     {
-      "name": "Mexico",
-      "count": 4
+      "name": "Oceania",
+      "count": 6
+    }
+  ],
+  "countries": [
+    {
+      "name": "United States",
+      "count": 38
     },
     {
-      "name": "Argentina",
-      "count": 3
+      "name": "Canada",
+      "count": 14
+    },
+    {
+      "name": "United Kingdom",
+      "count": 13
+    },
+    {
+      "name": "Germany",
+      "count": 7
     },
     {
       "name": "Kenya",
+      "count": 7
+    },
+    {
+      "name": "Australia",
+      "count": 4
+    },
+    {
+      "name": "India",
+      "count": 4
+    },
+    {
+      "name": "Switzerland",
+      "count": 4
+    },
+    {
+      "name": "Mexico",
       "count": 3
     },
     {
@@ -172,23 +176,23 @@
       "count": 3
     },
     {
+      "name": "Argentina",
+      "count": 2
+    },
+    {
       "name": "Belgium",
       "count": 2
     },
     {
-      "name": "Denmark",
+      "name": "Greece",
       "count": 2
     },
     {
-      "name": "India",
+      "name": "Namibia",
       "count": 2
     },
     {
-      "name": "Multi-country",
-      "count": 2
-    },
-    {
-      "name": "Singapore",
+      "name": "Nepal",
       "count": 2
     },
     {
@@ -196,7 +200,7 @@
       "count": 2
     },
     {
-      "name": "Australia",
+      "name": "Brazil",
       "count": 1
     },
     {
@@ -208,11 +212,35 @@
       "count": 1
     },
     {
+      "name": "Denmark",
+      "count": 1
+    },
+    {
       "name": "Egypt",
       "count": 1
     },
     {
-      "name": "Nepal",
+      "name": "Ethiopia",
+      "count": 1
+    },
+    {
+      "name": "France",
+      "count": 1
+    },
+    {
+      "name": "Global",
+      "count": 1
+    },
+    {
+      "name": "Guatemala",
+      "count": 1
+    },
+    {
+      "name": "Ireland",
+      "count": 1
+    },
+    {
+      "name": "Italy",
       "count": 1
     },
     {
@@ -221,6 +249,10 @@
     },
     {
       "name": "Nigeria",
+      "count": 1
+    },
+    {
+      "name": "Paraguay",
       "count": 1
     },
     {
@@ -236,10 +268,6 @@
       "count": 1
     },
     {
-      "name": "Switzerland",
-      "count": 1
-    },
-    {
       "name": "Uganda",
       "count": 1
     },
@@ -250,7 +278,39 @@
   ],
   "categories": [
     {
+      "name": "Humanitarian response / participatory AI",
+      "count": 5
+    },
+    {
+      "name": "Indigenous language technology",
+      "count": 5
+    },
+    {
+      "name": "Accessibility / assistive AI",
+      "count": 4
+    },
+    {
+      "name": "Accessibility / dataset stewardship",
+      "count": 4
+    },
+    {
       "name": "Accessibility / sign language translation",
+      "count": 4
+    },
+    {
+      "name": "Algorithmic governance / public services",
+      "count": 4
+    },
+    {
+      "name": "Indigenous AI / data sovereignty",
+      "count": 4
+    },
+    {
+      "name": "Public dialogue / AI governance",
+      "count": 4
+    },
+    {
+      "name": "Public health / AI mental health support",
       "count": 4
     },
     {
@@ -258,64 +318,72 @@
       "count": 3
     },
     {
-      "name": "AI governance / national strategy consultation",
+      "name": "AI governance / inclusive stakeholder engagement",
       "count": 3
     },
     {
-      "name": "AI governance / public policy",
+      "name": "Community governance / AI inclusion",
       "count": 3
     },
     {
-      "name": "AI governance / risk assessment",
+      "name": "Legal AI / participatory design",
       "count": 3
     },
     {
-      "name": "Humanitarian response / participatory AI",
-      "count": 3
-    },
-    {
-      "name": "Indigenous language technology",
-      "count": 3
-    },
-    {
-      "name": "Public dialogue / AI governance",
-      "count": 3
+      "name": "Agriculture / extension",
+      "count": 2
     },
     {
       "name": "AI alignment / norm elicitation",
       "count": 2
     },
     {
-      "name": "AI governance / inclusive stakeholder engagement",
+      "name": "AI governance / public policy",
       "count": 2
     },
     {
-      "name": "AI governance / information integrity",
+      "name": "Algorithmic justice / participatory research",
       "count": 2
     },
     {
-      "name": "AI governance / public deliberation",
+      "name": "Capacity building / Indigenous AI",
       "count": 2
     },
     {
-      "name": "Community governance / AI inclusion",
+      "name": "Education / AI dialogue co-design",
       "count": 2
     },
     {
-      "name": "Environmental monitoring / computer vision",
+      "name": "Education / participatory AI tutoring",
+      "count": 2
+    },
+    {
+      "name": "Environmental justice / citizen science",
+      "count": 2
+    },
+    {
+      "name": "Healthcare / trustworthy AI co-design",
+      "count": 2
+    },
+    {
+      "name": "Online governance / content moderation",
+      "count": 2
+    },
+    {
+      "name": "Participatory auditing / LLM safety",
+      "count": 2
+    },
+    {
+      "name": "Participatory auditing / trustworthy AI",
+      "count": 2
+    },
+    {
+      "name": "Public dialogue / AI explainability governance",
       "count": 2
     },
     {
       "name": "Urban planning / generative AI",
       "count": 2
-    },
-    {
-      "name": "Accessibility / assistive AI",
-      "count": 1
-    },
-    {
-      "name": "Accessibility / dataset stewardship",
-      "count": 1
     },
     {
       "name": "Accessibility / plain-language AI",
@@ -327,10 +395,6 @@
     },
     {
       "name": "Accessibility / speech recognition",
-      "count": 1
-    },
-    {
-      "name": "Agriculture / extension",
       "count": 1
     },
     {
@@ -362,23 +426,15 @@
       "count": 1
     },
     {
-      "name": "AI governance / participatory narrative research",
+      "name": "AI governance / information integrity",
       "count": 1
     },
     {
-      "name": "AI governance / public ethics",
+      "name": "AI governance / public deliberation",
       "count": 1
     },
     {
-      "name": "AI governance / regional policy",
-      "count": 1
-    },
-    {
-      "name": "AI governance / regulatory sandbox",
-      "count": 1
-    },
-    {
-      "name": "AI governance / testing framework",
+      "name": "AI governance / risk assessment",
       "count": 1
     },
     {
@@ -386,19 +442,7 @@
       "count": 1
     },
     {
-      "name": "Algorithmic governance / public services",
-      "count": 1
-    },
-    {
-      "name": "Algorithmic justice / participatory research",
-      "count": 1
-    },
-    {
       "name": "Assistive technology / co-design",
-      "count": 1
-    },
-    {
-      "name": "Capacity building / Indigenous AI",
       "count": 1
     },
     {
@@ -418,10 +462,6 @@
       "count": 1
     },
     {
-      "name": "Education / AI dialogue co-design",
-      "count": 1
-    },
-    {
       "name": "Education / critical ML co-design",
       "count": 1
     },
@@ -438,15 +478,7 @@
       "count": 1
     },
     {
-      "name": "Education / participatory AI tutoring",
-      "count": 1
-    },
-    {
       "name": "Environmental justice / air quality",
-      "count": 1
-    },
-    {
-      "name": "Environmental justice / citizen science",
       "count": 1
     },
     {
@@ -458,7 +490,7 @@
       "count": 1
     },
     {
-      "name": "Feminist AI / community network",
+      "name": "Environmental monitoring / computer vision",
       "count": 1
     },
     {
@@ -486,14 +518,6 @@
       "count": 1
     },
     {
-      "name": "Healthcare / trustworthy AI co-design",
-      "count": 1
-    },
-    {
-      "name": "Human rights / computer vision for archives",
-      "count": 1
-    },
-    {
       "name": "Humanitarian AI governance",
       "count": 1
     },
@@ -503,10 +527,6 @@
     },
     {
       "name": "Humanitarian response / predictive analytics",
-      "count": 1
-    },
-    {
-      "name": "Indigenous AI / data sovereignty",
       "count": 1
     },
     {
@@ -542,14 +562,6 @@
       "count": 1
     },
     {
-      "name": "Legal AI / participatory design",
-      "count": 1
-    },
-    {
-      "name": "Mobility / cargo bike routing AI",
-      "count": 1
-    },
-    {
       "name": "Mobility / crowdsourced route safety AI",
       "count": 1
     },
@@ -558,11 +570,7 @@
       "count": 1
     },
     {
-      "name": "Online governance / content moderation",
-      "count": 1
-    },
-    {
-      "name": "Participatory auditing / LLM safety",
+      "name": "Participatory auditing / language models",
       "count": 1
     },
     {
@@ -570,31 +578,7 @@
       "count": 1
     },
     {
-      "name": "Participatory auditing / trustworthy AI",
-      "count": 1
-    },
-    {
-      "name": "Public consultation / AI governance",
-      "count": 1
-    },
-    {
-      "name": "Public dialogue / AI ethics governance",
-      "count": 1
-    },
-    {
-      "name": "Public dialogue / AI explainability governance",
-      "count": 1
-    },
-    {
-      "name": "Public health / AI mental health support",
-      "count": 1
-    },
-    {
       "name": "Public health / clinical prediction",
-      "count": 1
-    },
-    {
-      "name": "Public safety / contextual social media interpretation",
       "count": 1
     },
     {
@@ -616,63 +600,71 @@
   ],
   "organizationTypes": [
     {
+      "name": "nonprofit / NGO",
+      "count": 12
+    },
+    {
       "name": "research consortium",
-      "count": 9
+      "count": 10
+    },
+    {
+      "name": "university / research lab",
+      "count": 10
     },
     {
       "name": "university",
       "count": 9
     },
     {
-      "name": "university / research lab",
-      "count": 9
-    },
-    {
-      "name": "government",
-      "count": 8
-    },
-    {
-      "name": "multi-stakeholder partnership",
-      "count": 8
-    },
-    {
       "name": "nonprofit / research collaboration",
-      "count": 6
+      "count": 8
     },
     {
       "name": "grassroots community network",
       "count": 5
     },
     {
-      "name": "civil society coalition",
-      "count": 4
+      "name": "grassroots community organization",
+      "count": 5
+    },
+    {
+      "name": "multi-stakeholder partnership",
+      "count": 5
     },
     {
       "name": "nonprofit / social enterprise",
+      "count": 5
+    },
+    {
+      "name": "university + civic methodology partner",
+      "count": 5
+    },
+    {
+      "name": "community-university collaboration",
       "count": 4
     },
     {
-      "name": "academic partnership",
-      "count": 3
-    },
-    {
       "name": "company research",
-      "count": 3
+      "count": 4
     },
     {
       "name": "nonprofit",
-      "count": 3
-    },
-    {
-      "name": "nonprofit / NGO",
-      "count": 3
+      "count": 4
     },
     {
       "name": "nonprofit + university collaboration",
-      "count": 3
+      "count": 4
     },
     {
       "name": "nonprofit consortium",
+      "count": 4
+    },
+    {
+      "name": "research institute",
+      "count": 4
+    },
+    {
+      "name": "nonprofit + research collaboration",
       "count": 3
     },
     {
@@ -680,11 +672,15 @@
       "count": 3
     },
     {
-      "name": "government + nonprofit partnership",
+      "name": "academic partnership",
       "count": 2
     },
     {
-      "name": "grassroots community organization",
+      "name": "civil society coalition",
+      "count": 2
+    },
+    {
+      "name": "government + nonprofit partnership",
       "count": 2
     },
     {
@@ -700,20 +696,8 @@
       "count": 2
     },
     {
-      "name": "research institute",
-      "count": 2
-    },
-    {
-      "name": "university + civic methodology partner",
-      "count": 2
-    },
-    {
       "name": "university + research institute collaboration",
       "count": 2
-    },
-    {
-      "name": "academy / nonprofit",
-      "count": 1
     },
     {
       "name": "civil society + university",
@@ -724,15 +708,11 @@
       "count": 1
     },
     {
-      "name": "community-university collaboration",
-      "count": 1
-    },
-    {
       "name": "development program + audit organization",
       "count": 1
     },
     {
-      "name": "government + regulator collaboration",
+      "name": "government",
       "count": 1
     },
     {
@@ -764,10 +744,6 @@
       "count": 1
     },
     {
-      "name": "university + research institute",
-      "count": 1
-    },
-    {
       "name": "university consortium",
       "count": 1
     },
@@ -778,27 +754,71 @@
   ],
   "technologyGroups": [
     {
-      "name": "AI policy and strategy",
-      "count": 5
+      "name": "community governance around AI research and practice",
+      "count": 8
     },
     {
-      "name": "community governance around AI research and practice",
+      "name": "AI-enhanced messaging / knowledge platform",
+      "count": 6
+    },
+    {
+      "name": "governance / protocol design",
       "count": 4
     },
     {
-      "name": "AI ethics and governance",
+      "name": "AI evaluation and information integrity tools",
       "count": 3
     },
     {
-      "name": "AI governance and stakeholder engagement practices",
+      "name": "AI-assisted crisis intelligence",
       "count": 3
-    },
-    {
-      "name": "AI governance / public alignment",
-      "count": 2
     },
     {
       "name": "AI-assisted decision systems / explainability",
+      "count": 3
+    },
+    {
+      "name": "AI-driven digital mental health hub",
+      "count": 3
+    },
+    {
+      "name": "AI-enhanced worker tools",
+      "count": 3
+    },
+    {
+      "name": "algorithmic decision systems in public services",
+      "count": 3
+    },
+    {
+      "name": "assistive-technology design methods",
+      "count": 3
+    },
+    {
+      "name": "auditing toolkit",
+      "count": 3
+    },
+    {
+      "name": "computer vision",
+      "count": 3
+    },
+    {
+      "name": "information retrieval and legal document review",
+      "count": 3
+    },
+    {
+      "name": "AI ethics and governance",
+      "count": 2
+    },
+    {
+      "name": "AI governance and online harms deliberation",
+      "count": 2
+    },
+    {
+      "name": "AI governance and public deliberation",
+      "count": 2
+    },
+    {
+      "name": "AI-assisted natural resource governance",
       "count": 2
     },
     {
@@ -806,11 +826,11 @@
       "count": 2
     },
     {
-      "name": "auditing toolkit",
+      "name": "auditing workbenches",
       "count": 2
     },
     {
-      "name": "computer vision",
+      "name": "conversational AI",
       "count": 2
     },
     {
@@ -818,7 +838,7 @@
       "count": 2
     },
     {
-      "name": "governance",
+      "name": "multilingual speech and NLP platform",
       "count": 2
     },
     {
@@ -834,7 +854,15 @@
       "count": 2
     },
     {
+      "name": "predictive analytics / machine learning",
+      "count": 2
+    },
+    {
       "name": "sign language translation",
+      "count": 2
+    },
+    {
+      "name": "speech dataset / ASR",
       "count": 2
     },
     {
@@ -842,31 +870,15 @@
       "count": 1
     },
     {
-      "name": "AI ethics and governance deliberation",
-      "count": 1
-    },
-    {
-      "name": "AI ethics and governance narratives",
-      "count": 1
-    },
-    {
-      "name": "AI evaluation and information integrity tools",
-      "count": 1
-    },
-    {
       "name": "AI governance / generative AI deliberation",
       "count": 1
     },
     {
-      "name": "AI governance and online harms deliberation",
+      "name": "AI governance / public alignment",
       "count": 1
     },
     {
-      "name": "AI governance and public deliberation",
-      "count": 1
-    },
-    {
-      "name": "AI governance testing toolkit",
+      "name": "AI governance and stakeholder engagement practices",
       "count": 1
     },
     {
@@ -878,47 +890,11 @@
       "count": 1
     },
     {
-      "name": "AI regulatory testing and compliance",
-      "count": 1
-    },
-    {
-      "name": "AI-assisted crisis intelligence",
-      "count": 1
-    },
-    {
-      "name": "AI-assisted natural resource governance",
-      "count": 1
-    },
-    {
       "name": "AI-assisted safety reporting",
       "count": 1
     },
     {
-      "name": "AI-driven digital mental health hub",
-      "count": 1
-    },
-    {
-      "name": "AI-enhanced messaging / knowledge platform",
-      "count": 1
-    },
-    {
-      "name": "AI-enhanced worker tools",
-      "count": 1
-    },
-    {
-      "name": "algorithmic decision systems in public services",
-      "count": 1
-    },
-    {
       "name": "algorithmic systems / justice research",
-      "count": 1
-    },
-    {
-      "name": "assistive-technology design methods",
-      "count": 1
-    },
-    {
-      "name": "auditing workbenches",
       "count": 1
     },
     {
@@ -927,10 +903,6 @@
     },
     {
       "name": "classification",
-      "count": 1
-    },
-    {
-      "name": "computer vision / edge AI debris detection",
       "count": 1
     },
     {
@@ -955,18 +927,6 @@
     },
     {
       "name": "computer vision for rapid-test classification",
-      "count": 1
-    },
-    {
-      "name": "computer vision for video indexing",
-      "count": 1
-    },
-    {
-      "name": "context-aware social media interpretation with planned ML integration",
-      "count": 1
-    },
-    {
-      "name": "conversational AI",
       "count": 1
     },
     {
@@ -1022,15 +982,7 @@
       "count": 1
     },
     {
-      "name": "governance / protocol design",
-      "count": 1
-    },
-    {
       "name": "high-risk AI systems / governance",
-      "count": 1
-    },
-    {
-      "name": "information retrieval and legal document review",
       "count": 1
     },
     {
@@ -1054,19 +1006,11 @@
       "count": 1
     },
     {
-      "name": "multilingual speech and NLP platform",
-      "count": 1
-    },
-    {
       "name": "multimodal sign language translation",
       "count": 1
     },
     {
       "name": "multiple",
-      "count": 1
-    },
-    {
-      "name": "national AI strategy",
       "count": 1
     },
     {
@@ -1082,10 +1026,6 @@
       "count": 1
     },
     {
-      "name": "predictive analytics / machine learning",
-      "count": 1
-    },
-    {
       "name": "predictive modeling",
       "count": 1
     },
@@ -1094,15 +1034,7 @@
       "count": 1
     },
     {
-      "name": "responsible AI research governance",
-      "count": 1
-    },
-    {
       "name": "route safety prediction and recommender",
-      "count": 1
-    },
-    {
-      "name": "routing and infrastructure scoring",
       "count": 1
     },
     {
@@ -1123,10 +1055,6 @@
     },
     {
       "name": "speech data / ASR-TTS",
-      "count": 1
-    },
-    {
-      "name": "speech dataset / ASR",
       "count": 1
     },
     {
@@ -1153,187 +1081,187 @@
   "activityStatusGroups": [
     {
       "name": "Active",
-      "count": 58
+      "count": 69
     },
     {
       "name": "Completed",
-      "count": 21
+      "count": 24
     },
     {
       "name": "Published Case",
-      "count": 17
+      "count": 15
     },
     {
       "name": "Pilot",
-      "count": 10
-    },
-    {
-      "name": "Legacy",
-      "count": 7
+      "count": 12
     },
     {
       "name": "Funded",
-      "count": 2
+      "count": 8
+    },
+    {
+      "name": "Legacy",
+      "count": 3
     }
   ],
   "participationModes": [
     {
       "name": "Co Design",
-      "count": 25
-    },
-    {
-      "name": "Participatory Governance",
-      "count": 25
+      "count": 36
     },
     {
       "name": "Community Led",
-      "count": 15
+      "count": 30
     },
     {
-      "name": "Public Consultation",
-      "count": 11
+      "name": "Participatory Governance",
+      "count": 19
     },
     {
       "name": "Co Production",
-      "count": 7
+      "count": 9
     },
     {
-      "name": "Contributory",
+      "name": "Participatory Audit",
+      "count": 8
+    },
+    {
+      "name": "Co Governance",
       "count": 7
     },
     {
       "name": "Community In The Loop",
-      "count": 6
+      "count": 5
     },
     {
-      "name": "Participatory Research",
-      "count": 6
+      "name": "Contributory",
+      "count": 5
     },
     {
       "name": "Deliberative Co Design",
       "count": 4
     },
     {
-      "name": "Participatory Audit",
+      "name": "Participatory Research",
       "count": 4
     },
     {
-      "name": "Co Governance",
-      "count": 3
+      "name": "Civic Participation",
+      "count": 2
     },
     {
-      "name": "Civic Participation",
+      "name": "Public Consultation",
       "count": 2
     }
   ],
   "atlasDecisions": [
     {
       "name": "Core",
-      "count": 63
+      "count": 78
     },
     {
       "name": "Cautious",
-      "count": 36
+      "count": 52
     },
     {
       "name": "Review Candidate",
-      "count": 16
+      "count": 1
     }
   ],
   "reviewStatuses": [
     {
       "name": "Ready",
-      "count": 59
+      "count": 78
     },
     {
       "name": "Periodic Review",
-      "count": 40
+      "count": 52
     },
     {
       "name": "Manual Review Required",
-      "count": 16
+      "count": 1
     }
   ],
   "topTags": [
     {
       "name": "problem formulation",
-      "count": 63
-    },
-    {
-      "name": "governance",
-      "count": 61
+      "count": 90
     },
     {
       "name": "evaluation",
-      "count": 47
+      "count": 72
     },
     {
-      "name": "data collection",
-      "count": 35
+      "name": "governance",
+      "count": 53
     },
     {
       "name": "deployment",
-      "count": 33
+      "count": 42
+    },
+    {
+      "name": "data collection",
+      "count": 38
+    },
+    {
+      "name": "design",
+      "count": 37
+    },
+    {
+      "name": "participatory design",
+      "count": 29
     },
     {
       "name": "participatory governance",
-      "count": 25
+      "count": 23
     },
     {
-      "name": "civic engagement",
+      "name": "inclusive design",
       "count": 22
     },
     {
       "name": "auditing",
-      "count": 20
-    },
-    {
-      "name": "human-centered design",
-      "count": 20
-    },
-    {
-      "name": "inclusive design",
       "count": 19
     },
     {
-      "name": "decolonization",
+      "name": "civic engagement",
+      "count": 18
+    },
+    {
+      "name": "human-centered design",
       "count": 17
+    },
+    {
+      "name": "community governance",
+      "count": 16
     },
     {
       "name": "model training",
       "count": 16
     },
     {
-      "name": "design",
-      "count": 11
+      "name": "decolonization",
+      "count": 15
+    },
+    {
+      "name": "accessibility",
+      "count": 13
     },
     {
       "name": "labeling",
       "count": 11
     },
     {
-      "name": "data justice",
+      "name": "data governance",
       "count": 10
     },
     {
-      "name": "accessibility",
-      "count": 9
-    },
-    {
-      "name": "democratic governance",
-      "count": 8
-    },
-    {
       "name": "model development",
-      "count": 8
+      "count": 10
     },
     {
-      "name": "participatory design",
-      "count": 8
-    },
-    {
-      "name": "citizen science",
-      "count": 7
+      "name": "data justice",
+      "count": 9
     }
   ]
 }

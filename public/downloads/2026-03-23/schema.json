@@ -1,6 +1,6 @@
 {
   "version": "2026-03-23",
-  "generatedAt": "2026-03-24T00:41:00.491Z",
+  "generatedAt": "2026-05-15T16:10:49.121Z",
   "minimalParticipationDocumentation": [
     {
       "key": "participationMode",
@@ -42,14 +42,14 @@
     {
       "key": "provenanceUrl",
       "label": "Provenance URL",
-      "description": "Stable public source used to verify the record.",
+      "description": "Stable public evidence source used to verify the atlas record.",
       "requiredForContribution": true,
       "publicByDefault": true
     },
     {
       "key": "officialUrl",
       "label": "Official URL",
-      "description": "Primary project, program, or organization page when one exists.",
+      "description": "Primary project, program, publication, or organization documentation page when one exists.",
       "requiredForContribution": false,
       "publicByDefault": true
     },

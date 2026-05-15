@@ -67,14 +67,14 @@ export function ContributionForm() {
 
         <div className="space-y-2 md:col-span-2">
           <label htmlFor="provenanceUrl" className="meta-label">
-            Provenance URL
+            Evidence URL
           </label>
           <Input
             id="provenanceUrl"
             name="provenanceUrl"
             type="url"
             required
-            placeholder="Public source for this record"
+            placeholder="Public evidence source for this record"
           />
         </div>
 

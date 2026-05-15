@@ -7,6 +7,12 @@ import { CommunityPanel } from "@/components/projects/community-panel";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { getProjectBySlug, getProjects, getRelatedProjects } from "@/lib/data";
+import {
+  buildProjectExternalLinks,
+  getPrimaryEvidenceLink,
+  getProjectDocumentationLink,
+  sourceTypeLabel
+} from "@/lib/project-links";
 import { formatDate } from "@/lib/utils";
 
 type Props = {
@@ -36,27 +42,33 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-function normalizeExternalLink(href: string) {
-  try {
-    const url = new URL(href);
-    const pathname = url.pathname.replace(/\/+$/, "") || "/";
-    return `${url.protocol}//${url.host}${pathname}${url.search}`.toLowerCase();
-  } catch {
-    return href.trim().replace(/\/+$/, "").toLowerCase();
-  }
-}
-
 function DetailRow({
   label,
-  value
+  value,
+  wide = false
 }: {
   label: string;
   value: ReactNode;
+  wide?: boolean;
 }) {
   return (
-    <div className="flex flex-col gap-1 border-b border-border/70 pb-3 last:border-b-0 last:pb-0 sm:flex-row sm:items-start sm:justify-between sm:gap-4">
+    <div
+      className={
+        wide
+          ? "border-b border-border/70 pb-3 last:border-b-0 last:pb-0"
+          : "flex flex-col gap-1 border-b border-border/70 pb-3 last:border-b-0 last:pb-0 sm:flex-row sm:items-start sm:justify-between sm:gap-4"
+      }
+    >
       <dt className="text-sm text-faint">{label}</dt>
-      <dd className="max-w-none text-left text-sm text-muted sm:max-w-[62%] sm:text-right">{value}</dd>
+      <dd
+        className={
+          wide
+            ? "mt-2 max-w-3xl text-sm leading-6 text-muted"
+            : "max-w-none text-left text-sm text-muted sm:max-w-[62%] sm:text-right"
+        }
+      >
+        {value}
+      </dd>
     </div>
   );
 }
@@ -72,22 +84,16 @@ export default async function ProjectPage({ params }: Props) {
   const relatedProjects = await getRelatedProjects(project);
   const location =
     [project.city, project.countryNormalized ?? project.country].filter(Boolean).join(", ") || "Location not documented";
-  const externalLinks: Array<{ label: string; href: string }> = [];
-  const seenLinks = new Set<string>();
-
-  function addLink(label: string, href: string | null | undefined) {
-    if (!href) return;
-    const normalized = normalizeExternalLink(href);
-    if (seenLinks.has(normalized)) return;
-    seenLinks.add(normalized);
-    externalLinks.push({ label, href });
-  }
-
-  addLink("Source", project.provenanceUrl);
-  addLink("Documentation", project.projectDocumentationLink);
-  project.additionalLinks.forEach((href, index) => {
-    addLink(`Link ${index + 1}`, href);
-  });
+  const documentationLink = getProjectDocumentationLink(project);
+  const evidenceLink = getPrimaryEvidenceLink(project);
+  const externalLinks = buildProjectExternalLinks(project);
+  const atlasAssessment = [
+    project.atlasDecision,
+    project.participatoryConfidence ? `${project.participatoryConfidence} confidence` : null,
+    project.evidenceGrade ? `evidence grade ${project.evidenceGrade}` : null
+  ]
+    .filter(Boolean)
+    .join(" · ");
 
   return (
     <div className="page-shell space-y-12 py-10 sm:py-14">
@@ -120,25 +126,25 @@ export default async function ProjectPage({ params }: Props) {
           ) : null}
 
           <div className="flex flex-wrap gap-3">
-            {project.provenanceUrl ? (
+            {documentationLink ? (
               <a
-                href={project.provenanceUrl}
+                href={documentationLink.href}
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 rounded-full border border-border/80 bg-surface px-4 py-2 text-sm text-foreground transition hover:border-border hover:bg-surface-soft hover:text-accent"
               >
-                Source
+                Project documentation
                 <ExternalLink className="h-4 w-4" />
               </a>
             ) : null}
-            {project.projectDocumentationLink ? (
+            {evidenceLink ? (
               <a
-                href={project.projectDocumentationLink}
+                href={evidenceLink.href}
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 rounded-full border border-border/80 bg-surface px-4 py-2 text-sm text-foreground transition hover:border-border hover:bg-surface-soft hover:text-accent"
               >
-                Documentation
+                Evidence source
                 <ExternalLink className="h-4 w-4" />
               </a>
             ) : null}
@@ -159,41 +165,65 @@ export default async function ProjectPage({ params }: Props) {
         </Card>
       </section>
 
-      <section className={`grid gap-6 ${externalLinks.length ? "lg:grid-cols-[1fr,1fr]" : ""}`}>
+      <section className="grid gap-6 lg:grid-cols-[minmax(0,1.1fr),minmax(0,0.9fr)]">
         <Card>
-          <div className="meta-label">Details</div>
+          <div className="meta-label">Participation documentation</div>
           <dl className="mt-5 space-y-3">
             <DetailRow label="Participation mode" value={project.participationMode || "Not documented"} />
-            <DetailRow label="Participation group" value={project.participationModeGroup} />
-            <DetailRow label="Technology description" value={project.technology || "Not documented"} />
-            <DetailRow label="Funding" value={project.funding || "Not documented"} />
-            <DetailRow label="Region of activity" value={project.regionProjectActivity || "Not documented"} />
+            <DetailRow label="Participants" value={project.participants || "Not documented"} wide />
+            <DetailRow label="Methods" value={project.participationMethods || "Not documented"} wide />
+            <DetailRow label="AI lifecycle stages" value={project.aiLifecycleStages || "Not documented"} wide />
+            <DetailRow
+              label="Evidence summary"
+              value={project.participatoryEvidence || project.description || "Not documented"}
+              wide
+            />
+            <DetailRow label="Atlas assessment" value={atlasAssessment || "Not documented"} />
+            <DetailRow label="Uncertainty" value={project.uncertaintyReason || "Not documented"} wide />
           </dl>
         </Card>
 
-        {externalLinks.length ? (
+        <div className="space-y-6">
           <Card>
-            <div className="flex items-center gap-2 text-sm font-medium text-foreground">
-              <Link2 className="h-4 w-4 text-accent" />
-              Links
-            </div>
-
-            <div className="mt-5 space-y-3">
-              {externalLinks.map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="flex items-center justify-between gap-4 rounded-md border border-border/50 bg-surface-soft px-4 py-3 text-sm text-foreground transition hover:border-border/70 hover:bg-surface-strong"
-                >
-                  <span>{link.label}</span>
-                  <ExternalLink className="h-4 w-4 text-accent" />
-                </a>
-              ))}
-            </div>
+            <div className="meta-label">Project details</div>
+            <dl className="mt-5 space-y-3">
+              <DetailRow label="Participation group" value={project.participationModeGroup} />
+              <DetailRow label="Technology description" value={project.technology || "Not documented"} />
+              <DetailRow label="Funding" value={project.funding || "Not documented"} />
+              <DetailRow label="Region of activity" value={project.regionProjectActivity || "Not documented"} />
+              <DetailRow label="Verification status" value={project.verificationStatus || "Not documented"} />
+            </dl>
           </Card>
-        ) : null}
+
+          {externalLinks.length ? (
+            <Card>
+              <div className="flex items-center gap-2 text-sm font-medium text-foreground">
+                <Link2 className="h-4 w-4 text-accent" />
+                Links
+              </div>
+
+              <div className="mt-5 space-y-3">
+                {externalLinks.map((link) => (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex items-center justify-between gap-4 rounded-md border border-border/50 bg-surface-soft px-4 py-3 text-sm text-foreground transition hover:border-border/70 hover:bg-surface-strong"
+                  >
+                    <span>
+                      <span>{link.label}</span>
+                      {link.sourceType && (link.kind === "documentation" || link.kind === "evidence") ? (
+                        <span className="mt-1 block text-xs text-faint">{sourceTypeLabel(link.sourceType)}</span>
+                      ) : null}
+                    </span>
+                    <ExternalLink className="h-4 w-4 text-accent" />
+                  </a>
+                ))}
+              </div>
+            </Card>
+          ) : null}
+        </div>
       </section>
 
       <CommunityPanel projectSlug={project.slug} projectName={project.projectName} />

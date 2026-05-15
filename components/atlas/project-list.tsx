@@ -6,6 +6,7 @@ import { ExternalLink, Pin } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { getPrimaryEvidenceLink, getProjectDocumentationLink } from "@/lib/project-links";
 import type { AtlasProject } from "@/lib/types";
 import { truncate } from "@/lib/utils";
 
@@ -65,6 +66,8 @@ export function ProjectList({
       <div className="grid gap-4 xl:grid-cols-2">
         {visibleProjects.map((project) => {
           const selected = selectedSlugs.has(project.slug);
+          const documentationLink = getProjectDocumentationLink(project);
+          const evidenceLink = getPrimaryEvidenceLink(project);
 
           return (
             <Card key={project.slug} className={selected ? "border-accent/30 bg-surface-soft/92" : undefined}>
@@ -99,14 +102,14 @@ export function ProjectList({
                   </div>
                 </div>
 
-                {project.provenanceUrl ? (
+                {evidenceLink ? (
                   <a
-                    href={project.provenanceUrl}
+                    href={evidenceLink.href}
                     target="_blank"
                     rel="noreferrer"
                     className="inline-flex w-full shrink-0 items-center justify-center gap-2 rounded-md border border-border/50 bg-surface px-3 py-2 text-sm text-subtle transition hover:border-border/70 hover:bg-surface-soft hover:text-accent sm:w-auto sm:justify-start"
                   >
-                    Source
+                    Evidence
                     <ExternalLink className="h-3.5 w-3.5" />
                   </a>
                 ) : null}
@@ -145,14 +148,14 @@ export function ProjectList({
                 <Link href={`/projects/${project.slug}`} className="text-sm font-medium text-accent">
                   Open record
                 </Link>
-                {project.projectDocumentationLink ? (
+                {documentationLink ? (
                   <a
-                    href={project.projectDocumentationLink}
+                    href={documentationLink.href}
                     target="_blank"
                     rel="noreferrer"
                     className="text-sm text-subtle transition hover:text-accent"
                   >
-                    Documentation
+                    Project docs
                   </a>
                 ) : null}
               </div>

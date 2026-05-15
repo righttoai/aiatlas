@@ -16,6 +16,7 @@ import type { Topology } from "topojson-specification";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { getPrimaryEvidenceLink } from "@/lib/project-links";
 import type { AtlasProject } from "@/lib/types";
 import { cn, truncate } from "@/lib/utils";
 
@@ -283,6 +284,7 @@ export function AtlasMap({
                       .filter(Boolean)
                       .join(" · ");
                     const detail = project.leadOrg || project.organizationType;
+                    const evidenceLink = getPrimaryEvidenceLink(project);
 
                     return (
                       <div key={project.slug} className="rounded-sm border border-border/45 bg-surface-soft/82 p-2.5">
@@ -306,14 +308,14 @@ export function AtlasMap({
                           <Link href={`/projects/${project.slug}`} className="text-sm font-medium text-accent">
                             Open record
                           </Link>
-                          {project.projectDocumentationLink ? (
+                          {evidenceLink ? (
                             <a
-                              href={project.projectDocumentationLink}
+                              href={evidenceLink.href}
                               target="_blank"
                               rel="noreferrer"
                               className="text-sm text-subtle transition hover:text-accent"
                             >
-                              Source
+                              Evidence
                             </a>
                           ) : null}
                         </div>

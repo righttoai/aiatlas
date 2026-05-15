@@ -19,6 +19,8 @@ const MISSINGNESS_THRESHOLDS = {
   medium: 30
 };
 
+const EMPTY_SENTINELS = new Set(["not available", "n/a", "na", "none", "null", "undefined"]);
+
 function normalizeText(value) {
   return (value ?? "")
     .toString()
@@ -31,7 +33,9 @@ function normalizeText(value) {
 function cleanText(value) {
   if (value === null || value === undefined) return null;
   const trimmed = value.toString().trim();
-  return trimmed.length ? trimmed : null;
+  if (!trimmed.length) return null;
+  if (EMPTY_SENTINELS.has(normalizeText(trimmed))) return null;
+  return trimmed;
 }
 
 function normalizeName(value) {
@@ -232,7 +236,7 @@ async function main() {
     const officialUrl = cleanText(record.official_url);
     const sourceLinks = uniqueSourceLinks(record);
     const provenanceUrl = cleanText(record.provenance_url) ?? officialUrl ?? sourceLinks[0]?.url ?? "";
-    const projectDocumentationLink = officialUrl ?? sourceLinks[0]?.url ?? (provenanceUrl || null);
+    const projectDocumentationLink = officialUrl;
     const additionalLinks = unique(
       [officialUrl, ...sourceLinks.map((link) => link.url)]
         .filter(Boolean)
@@ -252,7 +256,7 @@ async function main() {
     const documentationFields = [
       ["city", city],
       ["lead organization", leadOrg],
-      ["official or provenance link", projectDocumentationLink ?? (provenanceUrl || null)],
+      ["primary documentation or evidence link", projectDocumentationLink ?? (provenanceUrl || null)],
       ["ai modality", technology],
       ["application domain", applicationDomain],
       ["participants", cleanText(record.participants)],
@@ -365,7 +369,7 @@ async function main() {
   const fieldCompleteness = [
     ["city", "City or local anchor", (project) => project.city !== null],
     ["leadOrg", "Lead organization", (project) => project.leadOrg !== null],
-    ["projectDocumentationLink", "Official or source link", (project) => project.projectDocumentationLink !== null],
+    ["projectDocumentationLink", "Primary documentation or evidence link", (project) => project.projectDocumentationLink !== null || project.provenanceUrl !== ""],
     ["technology", "AI modality", (project) => project.technology !== null],
     ["secondaryCategory", "Application domain", (project) => project.secondaryCategory !== null],
     ["participants", "Participants", (project) => project.participants !== null],
@@ -460,14 +464,14 @@ async function main() {
       {
         key: "provenanceUrl",
         label: "Provenance URL",
-        description: "Stable public source used to verify the record.",
+        description: "Stable public evidence source used to verify the atlas record.",
         requiredForContribution: true,
         publicByDefault: true
       },
       {
         key: "officialUrl",
         label: "Official URL",
-        description: "Primary project, program, or organization page when one exists.",
+        description: "Primary project, program, publication, or organization documentation page when one exists.",
         requiredForContribution: false,
         publicByDefault: true
       },
