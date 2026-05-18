@@ -9,10 +9,18 @@ The site is built from one source dataset:
 ## What the repo does
 
 - renders the atlas and record pages from the vetted CSV
+- connects the atlas with The Right to AI and the AI Pluralism Index through `/initiatives`
 - rebuilds generated JSON, GeoJSON, schema, and release metadata from that CSV
 - accepts public submissions through forms
 - sends every form submission into GitHub review
 - opens a draft pull request for new project submissions so review happens in the dataset itself
+
+## Related initiatives
+
+- [The Right to AI](https://therighttoai.com/) is the nonprofit initiative.
+- [AI Pluralism Index](https://aipluralism.wiki/) is a Right to AI project.
+
+The Participatory AI Atlas is also a Right to AI project.
 
 ## Stack
 

@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 
 const links = [
   { href: "/atlas", label: "Atlas" },
+  { href: "/initiatives", label: "Right to AI" },
   { href: "/contribute", label: "Contribute" }
 ];
 

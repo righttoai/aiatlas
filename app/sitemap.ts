@@ -8,6 +8,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticRoutes: MetadataRoute.Sitemap = [
     "",
     "/atlas",
+    "/initiatives",
     "/contribute"
   ].map((path) => ({
     url: `${SITE_URL}${path}`,

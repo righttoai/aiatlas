@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     template: `%s | ${SITE_NAME}`
   },
   description:
-    "Interactive atlas and versioned repository for vetted participatory AI initiatives.",
+    "Interactive atlas and versioned repository for vetted participatory AI initiatives, connected with The Right to AI and the AI Pluralism Index.",
   applicationName: SITE_NAME,
   alternates: {
     canonical: "/"
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: SITE_NAME,
     description:
-      "Interactive atlas and versioned repository for vetted participatory AI initiatives.",
+      "Interactive atlas and versioned repository for vetted participatory AI initiatives, connected with The Right to AI and the AI Pluralism Index.",
     url: SITE_URL,
     siteName: SITE_NAME,
     type: "website"
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: SITE_NAME,
     description:
-      "Interactive atlas and versioned repository for vetted participatory AI initiatives."
+      "Interactive atlas and versioned repository for vetted participatory AI initiatives, connected with The Right to AI and the AI Pluralism Index."
   }
 };
 
